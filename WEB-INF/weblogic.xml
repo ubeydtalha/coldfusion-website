@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/weblogic-web-app">
+	<container-descriptor>
+        <prefer-application-packages>
+			<package-name>com.rsa.asn1.*</package-name>
+			<package-name>com.rsa.jcp.*</package-name>
+			<package-name>com.rsa.jsafe.*</package-name>
+			<package-name>com.rsa.version.*</package-name>
+			<package-name>org.apache.commons.*</package-name>
+			<package-name>org.mozilla.classfile.*</package-name>
+			<package-name>org.mozilla.javascript.*</package-name>
+			<package-name>com.rsa.*</package-name>
+		</prefer-application-packages>
+    </container-descriptor>
+</weblogic-web-app>

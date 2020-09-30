@@ -1,0 +1,132 @@
+<!--
+
+/*************************************************************************
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2017 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and are protected by all applicable intellectual 
+* property laws, including trade secret and copyright laws.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+-->
+
+<cfoutput>
+<cfif request.runtime.isSessionEnabled()>
+	<cfif StructKeyExists(session,"scriptsrc")>
+		<script src="#session.scriptsrc#ajax/jquery/jquery.js"></script>
+		<script src="#session.scriptsrc#ajax/jquery/jquery-ui.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="#session.scriptsrc#ajax/jquery/jquery-ui.css" type="text/css" media="all" />
+		<script src="#session.scriptsrc#ajax/jquery/jquery-highlight.js"></script>
+	<cfelse>
+		<script src="#scriptsrc#ajax/jquery/jquery.js"></script>
+		<script src="#sriptsrc#ajax/jquery/jquery-ui.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="#scriptsrc#ajax/jquery/jquery-ui.css" type="text/css" media="all" />
+		<script src="#scriptsrc#ajax/jquery/jquery-highlight.js"></script>
+	</cfif>
+</cfif>
+</cfoutput>
+
+<style type="text/css">
+	/* open-sans-300 - latin */
+	@font-face {
+	  font-family: 'Open Sans';
+	  font-style: normal;
+	  font-weight: 300;
+	  src: url('../fonts/open-sans-v14-latin-300.eot'); /* IE9 Compat Modes */
+	  src: local('Open Sans Light'), local('OpenSans-Light'),
+	       url('../fonts/open-sans-v14-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+	       url('../fonts/open-sans-v14-latin-300.woff') format('woff'), /* Modern Browsers */
+	       url('../fonts/open-sans-v14-latin-300.ttf') format('truetype') /* Safari, Android, iOS */
+	}
+	/* open-sans-regular - latin */
+	@font-face {
+	  font-family: 'Open Sans';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: url('../fonts/open-sans-v14-latin-regular.eot'); /* IE9 Compat Modes */
+	  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+	       url('../fonts/open-sans-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+	       url('../fonts/open-sans-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+	       url('../fonts/open-sans-v14-latin-regular.ttf') format('truetype') /* Safari, Android, iOS */
+	}
+	html *{
+		color: #5E5E5E;
+		font-family: 'Open Sans', Helvetica;
+	}
+	@media only screen and (max-width: 1000px) {
+	    html {
+	        padding-left: 30px; 
+			padding-right: 30px;
+	    }
+	}
+	@media only screen and (min-width: 1001px) {
+		html {
+	        padding-left: 125px; 
+			padding-right: 125px;
+	    }
+	}
+}
+</style>
+<script type="text/javascript">
+
+	window.addEventListener("message", awaitResponse, false);
+
+	window.addEventListener('keydown', keyDownListener, false);
+
+	window.addEventListener('keyup', keyUpListener, false);
+
+	function keyDownListener(e){
+		window.parent.keyDownListener(e);
+	}
+
+	function keyUpListener(e){
+		window.parent.keyUpListener(e);
+	}
+
+	function awaitResponse(event){
+		var url = window.location.href;
+		var arr = url.split("/");
+		var url = arr[0] + "//" + arr[2];
+		if(url == event.origin && event.data != ""){
+			$("body").highlight(event.data);
+		}
+	}
+
+	function toggle(element_id){
+		$("#"+element_id).fadeToggle(500);
+	}
+	function toggleClass(class_id){
+		$("."+class_id).fadeToggle(500);
+	}
+	$(document).ready(function(){
+		//$('html').focus();
+		$(window).click(function() {
+			window.parent.toggleNav(false);
+		});
+		var url = window.location.href;
+		var arr = url.split("/");
+		var url = arr[0] + "//" + arr[2];
+
+		// for the category and subcategory
+		parent.postMessage("setCategory",url);
+
+		//for search
+		var searchIframe = window.parent.document.getElementById("search-ui-iframe").contentWindow;
+		searchIframe.postMessage("getsearchkeywords",url);
+	});
+	function removeSearchHighlights(){
+		$("span").each(function(){
+			this.classList.remove("highlight");
+		});
+	}
+</script>

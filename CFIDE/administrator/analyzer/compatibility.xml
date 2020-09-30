@@ -1,0 +1,986 @@
+<wddxPacket version='1.0'>
+	<header/>
+	<data>
+		<array length="98">
+			<!--
+			Template
+			<array length="8">
+				<string><ISSUE><string>
+				<string><REMEDY><string>
+				<string><SEVERITY><string>
+				<string><FEATURENAME><string>
+				<string><CATEGORY><string>
+				<string><ATTRIBUTES><string>
+				<string><ATTRVALUES><string>
+				<string><VERSION><string>
+			</array>
+			-->
+			<array length="8">
+				<string>ColdFusion 2018 has modified the usage of CFFunction tag. The attributes of the tag have been modified. </string>
+				<string>Check the usage of the CFFunction. </string>
+				<string>Info</string>
+				<string>CFFUNCTION</string>
+				<string>TagAttribute</string>
+				<string>access</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>	
+			
+			<array length="8">
+				<string>ColdFusion 2018 has removed cftree tag. </string>
+				<string>Do not use cftree tag. </string>
+				<string>Error</string>
+				<string>CFTREE</string>
+				<string>Tag</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2018 has removed cfmenu tag. </string>
+				<string>Do not use cfmenu tag. </string>
+				<string>Error</string>
+				<string>CFMENU</string>
+				<string>Tag</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2018 has removed cfcalendar tag. </string>
+				<string>Do not use cfcalendar tag. </string>
+				<string>Error</string>
+				<string>CFCALENDAR</string>
+				<string>Tag</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2018 has removed cfsprydataset tag. </string>
+				<string>Do not use cfsprydataset tag. </string>
+				<string>Error</string>
+				<string>CFSPRYDATASET</string>
+				<string>Tag</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>
+			
+			<array length="8">
+				<string>ColdFusion 2018 has deprecated the attribute requesttimeout for the tag cfschedule.</string>
+				<string>Check the updated doc of tag cfschedule.</string>
+				<string>Error</string>
+				<string>CFSCHEDULE</string>
+				<string>TagAttribute</string>
+				<string>requesttimeout</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2018 has deprecated the attribute fieldBoost,docBoost for the tag cfindex.</string>
+				<string>Check the updated doc of tag cfindex.</string>
+				<string>Error</string>
+				<string>CFINDEX</string>
+				<string>TagAttribute</string>
+				<string>fieldBoost,docBoost</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2018 has modified the usage of CFSet tag. Closures are now supported in tag syntax as well. </string>
+				<string>Check the usage of the CFSet. </string>
+				<string>Info</string>
+				<string>CFSET</string>
+				<string>Tag</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2018 has added a system function named RunAsync. </string>
+				<string>Change name of UDF RunAsync. </string>
+				<string>Error</string>
+				<string>RUNASYNC</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>
+			
+			<array length="8">
+				<string>ColdFusion 2018 has added a system function named StructIsOrdered. </string>
+				<string>Change name of UDF StructIsOrdered. </string>
+				<string>Error</string>
+				<string>STRUCTISORDERED</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>
+			
+					
+			<array length="8">
+				<string>ColdFusion 2018 has added a system function named ArrayFirst. </string>
+				<string>Change name of UDF ArrayFirst. </string>
+				<string>Error</string>
+				<string>ArrayFirst</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>
+			
+			<array length="8">
+				<string>ColdFusion 2018 has added a system function named cachegetengineproperties. </string>
+				<string>Change name of UDF cachegetengineproperties. </string>
+				<string>Error</string>
+				<string>cachegetengineproperties</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>
+			
+			<array length="8">
+				<string>ColdFusion 2018 has added a system function named ArrayLast. </string>
+				<string>Change name of UDF ArrayLast. </string>
+				<string>Error</string>
+				<string>ArrayLast</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>
+			
+			<array length="8">
+				<string>ColdFusion 2018 has added a system function named QueryDeleteRow. </string>
+				<string>Change name of UDF QueryDeleteRow. </string>
+				<string>Error</string>
+				<string>QueryDeleteRow</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>
+			
+			<array length="8">
+				<string>ColdFusion 2018 has added a system function named QueryDeleteColumn. </string>
+				<string>Change name of UDF QueryDeleteColumn. </string>
+				<string>Error</string>
+				<string>QueryDeleteColumn</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>
+			
+			<array length="8">
+				<string>ColdFusion 2018 has added a system function named onRestRequest. </string>
+				<string>Change name of UDF onRestRequest. </string>
+				<string>Error</string>
+				<string>onRestRequest</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2018</string>
+			</array>
+						
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named StructToSorted. </string>
+				<string>Change name of UDF StructToSorted. </string>
+				<string>Error</string>
+				<string>STRUCTTOSORTED</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>			
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named SpreadsheetGetColumnCount. </string>
+				<string>Change name of UDF SpreadsheetGetColumnCount. </string>
+				<string>Error</string>
+				<string>SPREADSHEETGETCOLUMNCOUNT</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>			
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named QuerySort. </string>
+				<string>Change name of UDF QuerySort. </string>
+				<string>Error</string>
+				<string>QUERYSORT</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>			
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named QueryReduce. </string>
+				<string>Change name of UDF QueryReduce. </string>
+				<string>Error</string>
+				<string>QUERYREDUCE</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>			
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named QueryMap. </string>
+				<string>Change name of UDF QueryMap. </string>
+				<string>Error</string>
+				<string>QUERYMAP</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named EncodeFor. </string>
+				<string>Change name of UDF EncodeFor. </string>
+				<string>Error</string>
+				<string>ENCODEFOR</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named ArrayContainsNoCase. </string>
+				<string>Change name of UDF ArrayContainsNoCase. </string>
+				<string>Error</string>
+				<string>ARRAYCONTAINSNOCASE</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named ArrayDeleteNoCase. </string>
+				<string>Change name of UDF ArrayDeleteNoCase. </string>
+				<string>Error</string>
+				<string>ARRAYDELETENOCASE</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named BooleanFormat. </string>
+				<string>Change name of UDF BooleanFormat. </string>
+				<string>Error</string>
+				<string>BOOLEANFORMAT</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named ExceptionKeyExists. </string>
+				<string>Change name of UDF ExceptionKeyExists. </string>
+				<string>Error</string>
+				<string>EXCEPTIONKEYEXISTS</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named Floor. </string>
+				<string>Change name of UDF Floor. </string>
+				<string>Error</string>
+				<string>FLOOR</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named IsPDFArchive. </string>
+				<string>Change name of UDF IsPDFArchive. </string>
+				<string>Error</string>
+				<string>ISPDFARCHIVE</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named QueryEach. </string>
+				<string>Change name of UDF QueryEach. </string>
+				<string>Error</string>
+				<string>QUERYEACH</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named QueryFilter. </string>
+				<string>Change name of UDF QueryFilter. </string>
+				<string>Error</string>
+				<string>QUERYFILTER</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named QueryKeyExists. </string>
+				<string>Change name of UDF QueryKeyExists. </string>
+				<string>Error</string>
+				<string>QUERYKEYEXISTS</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named ReplaceListNoCase. </string>
+				<string>Change name of UDF ReplaceListNoCase. </string>
+				<string>Error</string>
+				<string>REPLACELISTNOCASE</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has added a system function named ValueArray. </string>
+				<string>Change name of UDF ValueArray. </string>
+				<string>Error</string>
+				<string>VALUEARRAY</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has modified the usage of CFCache tag. The attributes of the tag have been modified. </string>
+				<string>Check the usage of the CFCache. </string>
+				<string>Info</string>
+				<string>CFCACHE</string>
+				<string>Tag</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has modified the usage of CFCollection tag. The attribute path is now a required attribute. </string>
+				<string>Check the usage of the attribute path of the tag CFCollection. </string>
+				<string>Error</string>
+				<string>CFCOLLECTION</string>
+				<string>TagAttribute</string>
+				<string>path</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has modified the usage of CFSpreadSheet tag. </string>
+				<string>Check the usage of the attribute autosize of the tag CFSpreadSheet. </string>
+				<string>Info</string>
+				<string>CFSPREADSHEET</string>
+				<string>TagAttribute</string>
+				<string>autosize</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has modified the usage of CFloop tag. </string>
+				<string>Check the usage of the tag CFloop. </string>
+				<string>Info</string>
+				<string>CFLOOP</string>
+				<string>Tag</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has modified the usage of CFQuery tag. The usage of attributes cachedAfter and scale have been updated and the attributes connectString, DBName, DBServer, provider, providerDSN and sql have been removed. </string>
+				<string>Check the usage of the attributes cachedAfter, scale, connectString, DBName, DBServer, provider, providerDSN and sql of the tag CFQuery. </string>
+				<string>Error</string>
+				<string>CFQUERY</string>
+				<string>TagAttribute</string>
+				<string>cachedAfter,scale,connectString,DBName,DBServer,provider,providerDSN,sql</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has modified the usage of CFStoredProc tag. The usage of the attribute cachedAfter has been updated and the attributes connectString, DBName, DBServer, DBType, provider and providerDSN have been removed. </string>
+				<string>Check the usage of the attributes cachedAfter, connectString, DBName, DBServer, DBType, provider and providerDSN of the tag CFStoredProc. </string>
+				<string>Error</string>
+				<string>CFSTOREDPROC</string>
+				<string>TagAttribute</string>
+				<string>cachedAfter,connectString,DBName,DBServer,DBType,provider,providerDSN</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has modified the usage of CFDBInfo tag. The attribute datasource is now an optional attribute. </string>
+				<string>Check the usage of the attribute datasource of the tag CFDBInfo. </string>
+				<string>Info</string>
+				<string>CFDBINFO</string>
+				<string>TagAttribute</string>
+				<string>datasource</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has modified the usage of CFDocument tag. The attribute useWebkit has been removed. </string>
+				<string>Check the usage of the attributes useWebkit of the tag CFDocument. </string>
+				<string>Error</string>
+				<string>CFDocument</string>
+				<string>TagAttribute</string>
+				<string>useWebkit</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has modified the usage of CFPdf tag. </string>
+				<string>Check the usage of the tag CFPdf. </string>
+				<string>Info</string>
+				<string>CFPDF</string>
+				<string>Tag</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 2016 has modified the usage of CFPDFParam tag. The attribute source is now a required attribute. </string>
+				<string>Check the usage of the attribute source of the tag CFPDFParam. </string>
+				<string>Error</string>
+				<string>CFPDFPARAM</string>
+				<string>TagAttribute</string>
+				<string>source</string>
+				<string>N/A</string>
+				<string>2016</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cflog tag. The attributes date, thread and time have been removed. </string>
+				<string>Check the usage of the attributes date, thread and time of the tag cflog. </string>
+				<string>Error</string>
+				<string>CFLOG</string>
+				<string>TagAttribute</string>
+				<string>date,thread,time</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cferror tag. The value 'monitor' for the exception attribute has been removed. </string>
+				<string>Check the usage of the attribute exception of the tag cferror. </string>
+				<string>Error</string>
+				<string>CFERROR</string>
+				<string>TagAttribute</string>
+				<string>exception</string>
+				<string>monitor</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has removed cfservlet tag. </string>
+				<string>Do not use cfservlet tag. </string>
+				<string>Error</string>
+				<string>CFSERVLET</string>
+				<string>Tag</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has removed cfservletparam tag. </string>
+				<string>Do not use cfservletparam tag. </string>
+				<string>Error</string>
+				<string>CFSERVLETPARAM</string>
+				<string>Tag</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cfgridupdate tag. The attributes connectString, dbName, dbServer, dbType, provider and providerDSN have been removed. </string>
+				<string>Check the usage of the attributes connectString, dbName, dbServer, dbType, provider and providerDSN of the tag cfgridupdate. </string>
+				<string>Error</string>
+				<string>CFGRIDUPDATE</string>
+				<string>TagAttribute</string>
+				<string>connectString,dbName,dbServer,dbType,provider,providerDSN</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cfinsert tag. The attributes connectString, dbName, dbServer, dbType, provider and providerDSN have been removed. </string>
+				<string>Check the usage of the attributes connectString, dbName, dbServer, dbType, provider and providerDSN of the tag cfinsert. </string>
+				<string>Error</string>
+				<string>CFINSERT</string>
+				<string>TagAttribute</string>
+				<string>connectString,dbName,dbServer,dbType,provider,providerDSN</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cfstoredproc tag. The attributes connectString, dbName, dbServer, dbType, provider and providerDSN have been removed. </string>
+				<string>Check the usage of the attributes connectString, dbName, dbServer, dbType, provider and providerDSN of the tag cfstoredproc. </string>
+				<string>Error</string>
+				<string>CFSTOREDPROC</string>
+				<string>TagAttribute</string>
+				<string>connectString,dbName,dbServer,dbType,provider,providerDSN</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cfupdate tag. The attributes connectString, dbName, dbServer, dbType, provider and providerDSN have been removed. </string>
+				<string>Check the usage of the attributes connectString, dbName, dbServer, dbType, provider and providerDSN of the tag cfupdate. </string>
+				<string>Error</string>
+				<string>CFUPDATE</string>
+				<string>TagAttribute</string>
+				<string>connectString,dbName,dbServer,dbType,provider,providerDSN</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cfquery tag. The attributes connectString, dbName, dbServer, provider, providerDSN and sql have been removed. </string>
+				<string>Check the usage of the attributes connectString, dbName, dbServer, provider, providerDSN and sql of the tag cfquery. </string>
+				<string>Error</string>
+				<string>CFQUERY</string>
+				<string>TagAttribute</string>
+				<string>connectString,dbName,dbServer,provider,providerDSN,sql</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of dbType attribute of cfquery tag. Some possible values of dbType attribute have been removed. </string>
+				<string>Check the usage of the dbType attribute of cfquery tag. </string>
+				<string>Error</string>
+				<string>CFQUERY</string>
+				<string>TagAttribute</string>
+				<string>dbType</string>
+				<string>dynamic,ODBC,Oracle73,Oracle80,Sybase11,OLEDB,DB2</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cfcache tag. The attributes cachedirectory and timeout have been removed. </string>
+				<string>Check the usage of the attributes cachedirectory and timeout of the tag cfcache. </string>
+				<string>Error</string>
+				<string>CFCACHE</string>
+				<string>TagAttribute</string>
+				<string>cachedirectory,timeout</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cffile tag. Some possible values of attributes attribute have been removed. </string>
+				<string>Check the usage of the attributes attribute of the tag cffile. </string>
+				<string>Error</string>
+				<string>CFFILE</string>
+				<string>TagAttribute</string>
+				<string>attributes</string>
+				<string>system,temporary</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cfftp tag. The attribute agentname has been removed. </string>
+				<string>Check the usage of the attribute agentname of the tag cfftp. </string>
+				<string>Error</string>
+				<string>CFFTP</string>
+				<string>TagAttribute</string>
+				<string>agentname</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has removed cfgraph tag. </string>
+				<string>Do not use cfgraph tag. </string>
+				<string>Error</string>
+				<string>CFGRAPH</string>
+				<string>Tag</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has removed cfgraphdata tag. </string>
+				<string>Do not use cfgraphdata tag. </string>
+				<string>Error</string>
+				<string>CFGRAPHDATA</string>
+				<string>Tag</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cfldap tag. The attribute filterFile has been removed. </string>
+				<string>Check the usage of the attribute filterFile of the tag cfldap. </string>
+				<string>Error</string>
+				<string>CFLDAP</string>
+				<string>TagAttribute</string>
+				<string>filterFile</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cfcollection tag. Some possible values of action attribute have been removed. </string>
+				<string>Check the usage of the action attribute of the tag cfcollection. </string>
+				<string>Error</string>
+				<string>CFCOLLECTION</string>
+				<string>TagAttribute</string>
+				<string>action</string>
+				<string>map,repair</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cfform tag. The attributes passThrough and enableCAB have been removed. </string>
+				<string>Check the usage of the attributes passThrough and enableCAB of the tag cfform. </string>
+				<string>Error</string>
+				<string>CFFORM</string>
+				<string>TagAttribute</string>
+				<string>passThrough,enableCAB</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cfinput tag. The attribute passThrough has been removed. </string>
+				<string>Check the usage of the attribute passThrough of the tag cfinput. </string>
+				<string>Error</string>
+				<string>CFINPUT</string>
+				<string>TagAttribute</string>
+				<string>passThrough</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cfsearch tag. The attributes external and language have been removed. </string>
+				<string>Check the usage of the attributes external and language of the tag cfsearch. </string>
+				<string>Error</string>
+				<string>CFSEARCH</string>
+				<string>TagAttribute</string>
+				<string>external,language</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cfselect tag. The attribute passThrough has been removed. </string>
+				<string>Check the usage of the attribute passThrough of the tag cfselect. </string>
+				<string>Error</string>
+				<string>CFSELECT</string>
+				<string>TagAttribute</string>
+				<string>passThrough</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cfslider tag. The attributes img, imgStyle, grooveColor, refreshLabel, tickmarkimages, tickmarklabels, tickmarkmajor and tickmarkminor have been removed. </string>
+				<string>Check the usage of the attributes img, imgStyle, grooveColor, refreshLabel, tickmarkimages, tickmarklabels, tickmarkmajor and tickmarkminor of the tag cfslider. </string>
+				<string>Error</string>
+				<string>CFSLIDER</string>
+				<string>TagAttribute</string>
+				<string>img,imgStyle,grooveColor,refreshLabel,tickmarkimages,tickmarklabels,tickmarkmajor,tickmarkminor</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has removed cftextinput tag. </string>
+				<string>Do not use cftextinput tag. </string>
+				<string>Error</string>
+				<string>CFTEXTINPUT</string>
+				<string>Tag</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+
+			<array length="8">
+				<string>ColdFusion 11 has modified the usage of cflocation tag. If Secure Profile is enabled, default value for addtoken attribute will be false. </string>
+				<string>Check the usage of the attribute addtoken of the tag cflocation. </string>
+				<string>Info</string>
+				<string>CFLocation</string>
+				<string>Tag</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named arrayMap. </string>
+				<string>Change name of UDF arrayMap. </string>
+				<string>Error</string>
+				<string>ARRAYMAP</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named arrayReduce. </string>
+				<string>Change name of UDF arrayReduce. </string>
+				<string>Error</string>
+				<string>ARRAYREDUCE</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named deserialize. </string>
+				<string>Change name of UDF deserialize. </string>
+				<string>Error</string>
+				<string>DESERIALIZE</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named deserializeXML. </string>
+				<string>Change name of UDF deserializeXML. </string>
+				<string>Error</string>
+				<string>DESERIALIZEXML</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named encodeForDN. </string>
+				<string>Change name of UDF encodeForDN. </string>
+				<string>Error</string>
+				<string>ENCODEFORDN</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named encodeForLDAP. </string>
+				<string>Change name of UDF encodeForLDAP. </string>
+				<string>Error</string>
+				<string>ENCODEFORLDAP</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named encodeForXMLAttribute. </string>
+				<string>Change name of UDF encodeForXMLAttribute. </string>
+				<string>Error</string>
+				<string>ENCODEFORXMLATTRIBUTE</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named encodeForXPath. </string>
+				<string>Change name of UDF encodeForXPath. </string>
+				<string>Error</string>
+				<string>ENCODEFORXPATH</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named generatePBKDFKey. </string>
+				<string>Change name of UDF generatePBKDFKey. </string>
+				<string>Error</string>
+				<string>GENERATEPBKDFKEY</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named getSafeHTML. </string>
+				<string>Change name of UDF getSafeHTML. </string>
+				<string>Error</string>
+				<string>GETSAFEHTML</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named imageGetMetadata. </string>
+				<string>Change name of UDF imageGetMetadata. </string>
+				<string>Error</string>
+				<string>IMAGEGETMETADATA</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named invalidateOAuthAccessToken. </string>
+				<string>Change name of UDF invalidateOAuthAccessToken. </string>
+				<string>Error</string>
+				<string>INVALIDATEOAUTHACCESSTOKEN</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named isSafeHTML. </string>
+				<string>Change name of UDF isSafeHTML. </string>
+				<string>Error</string>
+				<string>ISSAFEHTML</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named isValidOAuthAccessToken. </string>
+				<string>Change name of UDF isValidOAuthAccessToken. </string>
+				<string>Error</string>
+				<string>ISVALIDOAUTHACCESSTOKEN</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named listEach. </string>
+				<string>Change name of UDF listEach. </string>
+				<string>Error</string>
+				<string>LISTEACH</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named listMap. </string>
+				<string>Change name of UDF listMap. </string>
+				<string>Error</string>
+				<string>LISTMAP</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named listReduce. </string>
+				<string>Change name of UDF listReduce. </string>
+				<string>Error</string>
+				<string>LISTREDUCE</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named queryExecute. </string>
+				<string>Change name of UDF queryExecute. </string>
+				<string>Error</string>
+				<string>QUERYEXECUTE</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named queryGetRow. </string>
+				<string>Change name of UDF queryGetRow. </string>
+				<string>Error</string>
+				<string>QUERYGETROW</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named serializeXML. </string>
+				<string>Change name of UDF serializeXML. </string>
+				<string>Error</string>
+				<string>SERIALIZEXML</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named serialize. </string>
+				<string>Change name of UDF serialize. </string>
+				<string>Error</string>
+				<string>SERIALIZE</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named spreadSheetAddAutoFilter. </string>
+				<string>Change name of UDF spreadSheetAddAutoFilter. </string>
+				<string>Error</string>
+				<string>SPREADSHEETADDAUTOFILTER</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named spreadSheetAddPageBreaks. </string>
+				<string>Change name of UDF spreadSheetAddPageBreaks. </string>
+				<string>Error</string>
+				<string>SPREADSHEETADDPAGEBREAKS</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named structMap. </string>
+				<string>Change name of UDF structMap. </string>
+				<string>Error</string>
+				<string>STRUCTMAP</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named structReduce. </string>
+				<string>Change name of UDF structReduce. </string>
+				<string>Error</string>
+				<string>STRUCTREDUCE</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			<array length="8">
+				<string>ColdFusion 11 has added a system function named writeBody. </string>
+				<string>Change name of UDF writeBody. </string>
+				<string>Error</string>
+				<string>WRITEBODY</string>
+				<string>Function</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>11</string>
+			</array>
+			
+
+		</array>
+	</data>
+</wddxPacket>

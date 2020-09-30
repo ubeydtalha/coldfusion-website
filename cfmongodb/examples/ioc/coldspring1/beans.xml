@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+	<bean id="mongoFactory" class="cfmongodb.core.JavaloaderFactory" />
+	<bean id="mongoConfig" class="cfmongodb.core.MongoConfig">
+		<constructor-arg name="dbName"><value>mongorocks</value></constructor-arg>
+		<constructor-arg name="mongoFactory">
+			<ref bean="mongoFactory" />
+		</constructor-arg>
+	</bean>
+	<bean id="mongo" class="cfmongodb.core.MongoClient">
+		<constructor-arg name="mongoConfig">
+			<ref bean="mongoConfig" />
+		</constructor-arg>
+	</bean>
+</beans>

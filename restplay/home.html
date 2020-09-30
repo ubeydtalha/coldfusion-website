@@ -1,0 +1,359 @@
+
+<div class="home-container">
+	<div class="home-header clearfix">
+		<h1 class="app-title">
+		<img src="images/cf-logo.png" class="cficon app-logo"/>
+		{{locale.PageTitle}}</h1>
+		
+	</div>
+	<div class="home-body">
+	<div class="no-app-msg-c" ng-if="!registerApp.showRegister && !applications.length">
+
+		<div class="no-app-msg">
+			<img src="images/info-tri.png" class="info-tri-icon cf-icon" />
+			<div ng-bind-html="noAppMsg">
+				
+			
+			</div>
+		</div>
+	</div>
+	<div ng-class="{'app-list-c': true, 'collapsed': tryOutUI.appCollapsed}" resizable r-directions="['right']" r-click="toggleListing">
+		<div class="app-list-main-c">
+		<div class="toggle-bar clearfix">
+			<div class="app-label">{{locale.Applications}}</div>
+			<img src="images/hide-nav.png" class="toggle-icon" ng-class="{'collapsed': tryOutUI.appCollapsed}" ng-click="toggleListing()"/>
+
+		</div>
+		<div class="app-left">
+			<div class="app-tbar">
+				<input type-"text" placeholder="{{locale.Search}}" class="app-search" ng-model="searchText" ng-class="{'no-add': devProfileNotEnabled}"/><span class="add-app-c" title="{{locale.AddApp}}" ng-click="showRegisterApp(true)" ng-show="!devProfileNotEnabled"><span class="cficon add-app"></span></span>
+			</div>
+		</div>
+		<ul class="app-list" ng-class="{'single-app': applications.length === 1}">
+			<li ng-repeat="app in applications |  filter:searchText" >
+				<div ng-click="loadApp(app.name, false, app)" ng-class="{'selected-app': app.name == selectedApp.appname, 'app-item': true}">
+					<img src="images/delete.png" class="cficon del-app action-icon" title="{{locale.DeleteApp}} {{app.name}}" ng-click="deleteApp(app.name)"/>
+					<img src="images/refresh-icon.png" class="refresh-icon cficon action-icon" ng-click="loadApp(app.name, true, app);$event.stopPropagation();" title="{{locale.RefreshApp}}" ng-show="!tryOutUI.refreshInProcess"/>
+					<img src="images/reload.svg" class="cf-icon refreshing-icon action-icon" ng-show="tryOutUI.refreshInProcess"/>
+					
+					<img src="images/app-icon2.png" class="cficon app-icon"/><div class="app-name">
+					<img src="images/error.png" class="cficon app-icon" ng-click="showError(app, true);$event.stopPropagation();" title="{{locale.ShowError}}" ng-show="app.message"/>
+					{{app.name}}</div>
+					</span>
+					
+				</div>
+				<div class="apilist-body-c" ng-if="app.name === selectedApp.appname">	
+					<ul class="api-list" ng-repeat="resource in selectedApp.resources">
+						<li ng-repeat="api in resource.apis" class="api-item" ng-click="selectApi(api, app)" ng-class="{'selected-api': selectedApp.appname + api.path === tryOutUI.name}">
+							<span class="api-name-span">{{api.path || api.description}} </span>
+							<span>{{sortResources(api)}}</span>
+							<div class="api-item-methods">
+								<span ng-repeat="operation in api.operations" class="api-item-method" ng-click="selectApi(api, app, operation.method, $event, operation)" ng-class="{'method-selected': tryOutUI.selectedOperation === operation}">{{operation.method}}</span>
+
+							<div>
+						</li>
+					</ul>
+				</div>
+				
+
+			</li>
+			<li ng-if="!applications.length" class="no-apps">
+				{{locale.NoAppAvailable}}
+			</li>
+		</ul>
+		<div class="app-list-collapsed">
+			<ul class="collapse-list" ng-click="toggleListing()">
+				<li class="collapse-list-item search" ng-click="focusSearch($event)" title="{{locale.Search}}"></li>
+				<li class="collapse-list-item add-app" title="{{locale.AddApp}}" ng-click="focusShowApp($event)"  ng-show="!devProfileNotEnabled"></li>
+				<!-- <li class="collapse-list-item app"></li> -->
+			</ul>
+		</div>
+		</div>
+		</div><div class="api-detail"resizable r-directions="[]" >
+		<div class="request-title">{{locale.Request}}</div>
+		<div class="api-try-out">
+			<!-- <h1 class="api-name">{{tryOutUI.name}}</h1>
+			<p class="api-desc">{{api.desc}}</p> -->
+
+			<div class="input-c">
+				<div class="url-c">
+
+<select ng-options="operation as operation.method for operation in api.operations" 
+   ng-model="tryOutUI.selectedOperation" ng-change="updateVerb(tryOutUI.selectedOperation)" class="method-select"></select>
+
+ <input type="text" class="method-url" ng-model="tryOutUI.url"/><div class="url-copy-btn-c"  data-clipboard-target=".method-url" title="Copy URL to clipboard">
+				    	<img src="images/copy.svg" class="cficon url-copy-btn"/>
+				    	<div class="tip" ng-if="tryOutUI.urlCopied">{{Clipboard.isSupported() ? locale.URLCopied : locale.PressCopy}}</div>
+				    </div>
+				</div>
+				<div class="input-list">
+					<ul class="cf-tab-names">
+						<li class="cf-tab-name" ng-class="{'selected': isActive('params', 'headers')}" ng-click="setActive('params', 'headers')">{{locale.Headers}}</li>
+						<li class="cf-tab-name"  ng-class="{'selected': isActive('params', 'parameters')}" ng-click="setActive('params', 'parameters')">{{locale.Parameters}}</li>
+						<li class="cf-tab-name"  ng-class="{'selected': isActive('params', 'body')}" ng-click="setActive('params', 'body')">{{locale.Body}}</li>
+						<li class="cf-tab-name"  ng-class="{'selected': isActive('params', 'description')}" ng-click="setActive('params', 'description')">{{locale.Description}}</li>
+						<!--li class="cf-tab-name"  ng-class="{'selected': isActive('params', 'auth')}"ng-click="setActive('params', 'auth')"></li-->
+					</ul>
+					<div class="cf-tabs input-list-tabs">
+						<div class="cf-tab input-list-tab" ng-show="isActive('params', 'headers')">
+							
+							<ul class="headers-list request-headers">
+								<li ng-repeat="header in tryOutUI.headers" class="header-row old">
+									<input type="text" ng-model="header.name" placeholder="{{locale.Name}}" class="header-field"/>
+									<input type="text" ng-model="header.value" placeholder="{{locale.Value}}" class="header-field" ng-if="!header.list"/>
+									<oi-select
+								
+						ng-if="header.list"
+    oi-options="item for item in header.list"
+    oi-select-options="{newItem: true,saveTrigger: 'enter blur;'}"
+    ng-model="header.listValue"
+    multiple
+     ng-change="setListing(header)"
+    class="header-field oi-select"
+    placeholder="Select"
+    ></oi-select>
+    <a 
+									ng-click="showInfo(header, true)" href="javascript:void(0)" class="info-param"
+									ng-class="{'info-icon': header.paramObj && !header.paramObj.show}"
+									></a>
+									<a ng-click="deleteHeader($index, 'header')" href="javascript:void(0)" class="delete-header"></a>
+									<div ng-if="header.paramObj && header.paramObj.show" >
+										<div class="parameter-list-item">
+											<div class="parameter-list-name param-attr">
+												<label>{{locale.ParamName}}:</label> {{header.paramObj.name}}
+											</div>
+											<div class="parameter-list-name param-attr">
+												<label>{{locale.ParamType}}:</label> {{header.paramObj.type}}
+											</div>
+											<div class=" parameter-list-name param-attr">
+												<label>{{locale.ParamRealType}}:</label> {{header.paramObj.paramType}}
+											</div>
+										</div>
+										<div class="param-close" ng-click="showInfo(header, true)">
+											×
+										</div>
+									</div>
+								</li>
+								<li>
+								
+									
+						
+						<!-- <oi-select oi-options="s for s in getConsumeTypes(o)" ng-model="o.consumes" multiple oi-select-options="{newItem: true,saveTrigger: 'enter blur;'}" ng-change='apiListingClick(o,a.path,true,$data,"consume")' placeholder="{{createApiLocale.empty}}" ng-disabled='api.type === "soaptorest"'></oi-select> -->		</li>
+
+							</ul>
+							<div class="header-row new-header" ng-click="addHeader('header')">
+							
+									<span type="text" model="header.name" placeholder="{{locale.Name}}" class="header-field dummy" >{{locale.AddHeader}}</span>
+									<span type="text" model="header.value" placeholder="{{locale.Value}}" class="header-field dummy" >{{locale.AddValue}}</span>
+									
+								</div>
+						</div>
+						<div class="cf-tab input-list-tab" ng-show="isActive('params', 'parameters')">
+							
+							<ul class="headers-list request-parameters">
+								<li ng-repeat="parameter in tryOutUI.parameters" class="header-row">
+									<input type="text" ng-model="parameter.name" placeholder="{{locale.Name}}" class="header-field" />
+									<input type="text" ng-model="parameter.value" placeholder="{{locale.Value}}" class="header-field" />
+									<a ng-if="parameter.paramObj "
+									ng-click="showInfo(parameter, true)" href="javascript:void(0)" class="info-param"
+									ng-class="{'info-icon': parameter.paramObj && !parameter.paramObj.show}"
+									></a>
+									<a ng-click="deleteHeader($index, 'parameter')" href="javascript:void(0)" class="delete-header"></a>
+									<div ng-if="parameter.paramObj && parameter.paramObj.show" >
+										<div class="parameter-list-item">
+											<div class="parameter-list-name param-attr">
+												<label>{{locale.ParamName}}:</label> {{parameter.paramObj.name}}
+											</div>
+											<div class="parameter-list-name param-attr">
+												<label>{{locale.ParamType}}:</label> {{parameter.paramObj.type}}
+											</div>
+											<div class=" parameter-list-name param-attr">
+												<label>{{locale.ParamRealType}}:</label> {{parameter.paramObj.paramType}}
+											</div>
+										</div>
+										<div class="param-close" ng-click="showInfo(parameter, true)">
+											×
+										</div>
+									</div>
+								</li>
+								
+
+							</ul>
+							<div class="header-row new-header request-parameters" ng-click="addHeader('parameter')">
+									<span type="text" model="parameter.name" placeholder="{{locale.Name}}" class="header-field dummy" >{{locale.AddParameter}}</span>
+									<span type="text" model="parameter.value" placeholder="{{locale.Value}}" class="header-field dummy" >{{locale.AddValue}}</span>
+									
+								</div>
+						</div>
+						<div class="cf-tab input-list-tab" ng-show="isActive('params', 'description')">
+							{{tryOutUI.methodDescription || api.description || locale.NoDesc}}
+						</div>
+						<div class="cf-tab input-list-tab" ng-show="isActive('params', 'body')">
+							<div>
+								<span class="ng-hide">
+									<input type="radio" value="form-data" ng-model="tryOutUI.bodyType" ng-change="selectBodyType()"/>
+									<label class="body-type-label">x-wwww-form-encoded</label>
+								</span>
+								<span>
+									<input type="radio" value="text" ng-model="tryOutUI.bodyType" ng-change="selectBodyType()"/>
+									<label class="body-type-label">Text</label>
+								</span>
+								<span>
+									<input type="radio" value="json" ng-model="tryOutUI.bodyType" ng-change="selectBodyType()"/>
+									<label class="body-type-label">JSON</label>
+								</span>
+								<span>
+									<input type="radio" value="xml" ng-model="tryOutUI.bodyType" ng-change="selectBodyType()"/>
+									<label class="body-type-label">XML</label>
+								</span>
+							</div>
+							<div class="body-editor" id="editor"></div>
+						</div>
+					</div>
+					
+				
+				</div>
+				<div class="send-action clearfix">
+
+				    <span class="add-template-btn btn send-action-btn fill-btn" ng-click="tryOutApi()">{{locale.Send}}</span>
+				</div>
+			
+			</div>
+
+		</div>
+		<div class="output-c">
+			<div class="response-title">{{locale.Response}}</div>
+			<div class="response-c">
+				<ul class="cf-tab-names">
+						<li class="cf-tab-name" ng-class="{'selected': isActive('response', 'body')}" ng-click="setActive('response', 'body')">{{locale.Body}}</li>
+						<li class="cf-tab-name"  ng-class="{'selected': isActive('response', 'headers')}" ng-click="setActive('response', 'headers')">{{locale.Headers}}</li>
+						<li class="cf-tab-name"  ng-class="{'selected': isActive('response', 'request-summary')}" ng-click="setActive('response', 'request-summary')">{{locale.RequestSummary}}</li>
+						<!--li class="cf-tab-name"  ng-class="{'selected': isActive('params', 'auth')}"ng-click="setActive('params', 'auth')"></li-->
+					</ul>
+					<div class="cf-tabs response-tabs">
+					<div class="cf-tab response-tab response-value-tab" ng-show="isActive('response', 'body')">
+					<div class="" id="responseEditor" ng-show="!tryOutUI.ServerError"></div>
+					<div id="htmlResponse" ng-show="tryOutUI.ServerError"></div>
+										</div>
+					<div class="cf-tab response-tab" ng-show="isActive('response', 'headers')">
+						<div class="response-status" ng-if="tryOutUI.responseHeaders.length">{{locale.Status}}:  HTTP <span class="response-status-value">{{tryOutUI.response.status}} {{tryOutUI.statusMap[tryOutUI.response.status]}}</span></div>
+
+						<ul class="response-header-list">
+							<li ng-repeat="header in tryOutUI.responseHeaders">
+							<span class="response-header-key">{{header[0]}}:</span><span class="response-header-value"> {{header[1]}}</span></li>
+						</ul>
+					</div>
+					<div class="cf-tab response-tab" ng-show="isActive('response', 'request-summary') && tryOutUI.triedOut">
+						<div class="key-value-row">
+						<span class="response-header-key">{{locale.URL}}:</span><span class="response-header-value"> {{tryOutModel.url}}</span>
+						</div>
+						<div class="key-value-row">
+						<span class="response-header-key">{{locale.Method}}:</span><span class="response-header-value"> {{tryOutModel.method}}</span>
+						</div>
+						<div ng-show="hasKeys(tryOutModel.headers)" class="request-headers">
+							<span class="response-header-key">{{locale.Headers}}:</span>
+							<div class="key-value-row" ng-repeat="(headerKey, headerVal) in tryOutModel.headers">
+						<span class="response-header-key">{{headerKey}}:</span><span class="response-header-value"> {{headerVal}}</span>
+						</div>
+						</div>
+						<div ng-show="hasKeys(tryOutModel.params)" class="request-headers">
+							<span class="response-header-key">{{locale.Parameters}}:</span>
+							<div class="key-value-row" ng-repeat="(headerKey, headerVal) in tryOutModel.params">
+						<span class="response-header-key">{{headerKey}}:</span><span class="response-header-value"> {{headerVal}}</span>
+						</div>
+						</div>
+						<div class="key-value-row" ng-if="tryOutModel.data">
+						<span class="response-header-key">{{locale.Body}}:</span><span class="response-header-value"> {{tryOutModel.data}}</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- 		<div class="doc-c">
+			<div class="doc-title">{{locale.Documentation}}</div>
+			<div class="doc-acc">
+				<div class="doc-section">
+					<div class="doc-section-title clearfix" ng-click="toggleSection('desc')">
+						<span>{{locale.Description}}</span>
+						<span class="cficon doc-arrow" ng-if="!isSectionOpen('desc')"></span>
+						<span class="cficon doc-arrow doc-arrow-up" ng-if="isSectionOpen('desc')"></span>
+					</div>
+					<div class="doc-section-body" ng-show="isSectionOpen('desc')">
+						{{tryOutUI.methodDescription || api.description || locale.NoDesc}}
+					</div>
+				</div>
+				<div class="doc-section">
+					<div class="doc-section-title" ng-click="toggleSection('param')">
+						{{locale.Parameters}}
+						<span class="cficon doc-arrow" ng-if="!isSectionOpen('param')"></span>
+						<span class="cficon doc-arrow doc-arrow-up" ng-if="isSectionOpen('param')"></span>
+					</div>
+					<div class="doc-section-body" ng-show="isSectionOpen('param')">
+						<div ng-repeat="operation in api.operations" ng-if="operation.method === tryOutModel.method">
+
+							<div ng-if="!operation.parameters.length">
+								{{locale.NoParamsAvailable}}
+							</div>
+							<ul  ng-if="operation.parameters.length" class="parameter-list"> 
+								<li ng-repeat="operation in operation.parameters" class="parameter-list-item">
+									<div class="parameter-list-name param-attr">
+										{{locale.ParamName}}: {{operation.name}}
+									</div>
+									<div class="param-attr">
+										{{locale.ParamType}}: {{operation.type}}
+									</div>
+									<div class="param-attr">
+										{{locale.ParamRealType}}: {{operation.paramType}}
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="doc-section">
+					<div class="doc-section-title" ng-click="toggleSection('resp')">
+						Responses
+					</div>
+					<div class="doc-section-body" ng-show="isSectionOpen('resp')">
+					</div>
+				</div> 
+			</div>
+		</div> -->
+
+	</div></div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/home.css">
+<link rel="stylesheet" type="text/css" href="css/resizable.min.css">
+<modal visible="showmodal.showRegister" mtitle="RegisterApp" id="showRegister">
+			<div class="register-app-c clearfix" >
+				<div class="register-app-main">
+				<div class="register-field">
+					<label class="register-field-label">{{locale.AppPath}}*
+					<span class="cf-tip info-icon" data-tip="{{locale.TipAppPath}}"></span></label><input type="text" ng-model="registerApp.appPath" class="register-field-input " />
+
+				</div>
+				<div class="register-field">
+					<label class="register-field-label">{{locale.AppHost}} [:Port]
+						<span class="cf-tip info-icon" data-tip="{{locale.TipAppHost}}"></span>
+					</label><input type="text" ng-model="registerApp.wshost" class="register-field-input" />
+				</div>
+				<div class="register-field">
+					<label class="register-field-label"> {{locale.ServiceMapping}}
+					<span class="cf-tip info-icon" data-tip="{{locale.TipServiceMapping}}"></span></label><input type="text" ng-model="registerApp.mapping" class="register-field-input" />
+				</div>
+				<div class="register-field">
+					<label class="register-field-label"> {{locale.SetDefaultApp}}
+					<span class="cf-tip info-icon" data-tip="{{locale.TipDefaultApp}}"></span></label><input type="checkbox" ng-model="registerApp.isdefault" class="register-field-input" />
+				</div>
+				<div class="register-field-actions clearfix">
+					<span class="btn fill-btn" ng-click="doRegisterApp()">{{locale.Register}}</span>
+					<span class="btn"  ng-click="showRegisterApp(false)">{{locale.Cancel}}</span>
+				</div>
+				</div>
+			</div>
+		</modal>
+<modal visible="showmodal.modalError" mtitle="Error" id="modalError" class="error-modal-c">
+			<div class="register-app-c clearfix modal-error" >
+				<div ng-bind-html="tryOutUI.modalErrorMsg"></div>
+			</div>
+		</modal>

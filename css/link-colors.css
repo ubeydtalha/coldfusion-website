@@ -1,0 +1,33 @@
+
+a:link{
+    color: rgb(250, 165, 109);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited{
+    color: blueviolet;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    text-align: center;
+    padding: 25px;
+}
+body {
+    background-color: black;
+}  

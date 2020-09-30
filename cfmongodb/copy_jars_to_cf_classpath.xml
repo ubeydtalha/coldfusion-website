@@ -1,0 +1,18 @@
+<project name="copy jars" default="copy_jars">
+
+	<target name="copy_jars">
+	
+		<property name="cf9_libs" value="C:/JRun4/servers/cfusion/cfusion-ear/cfusion-war/WEB-INF/cfusion/lib"/>
+		<property name="cf10_libs" value="C:/ColdFusion10/cfusion/lib"/>
+		<delete dir="${cf9_libs}" includes="mongo-*.jar"/>
+		<copy todir="${cf9_libs}">
+			<fileset dir="lib" includes="cfmongodb.jar,mongo*.jar"/>
+		</copy>
+		<delete dir="${cf10_libs}" includes="mongo-*.jar"/>
+			
+		<copy todir="C:/ColdFusion10/cfusion/lib">
+			<fileset dir="lib" includes="cfmongodb.jar,mongo*.jar"/>
+		</copy>
+	</target>
+
+</project>

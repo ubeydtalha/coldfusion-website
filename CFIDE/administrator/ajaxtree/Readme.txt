@@ -1,0 +1,1 @@
+jqfiletree.js is being used under MIT license as specified here : http://www.opensource.org/licenses/mit-license.php

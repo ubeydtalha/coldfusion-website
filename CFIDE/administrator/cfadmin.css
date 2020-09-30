@@ -1,0 +1,36 @@
+.color-title		{background-color:888885;color:white;background-color:7A8FA4;}
+.color-header		{background-color:ddddd5;}
+.color-buttons		{background-color:ccccc5;}
+.color-border		{background-color:666666;}
+
+.color-row			{background-color:fffff5;}
+.color-rowalert		{background-color:ffddaa;}
+
+.buttn,.buttnText	{font-size:70%;font-family: tahoma,arial,Geneva,Helvetica,sans-serif;background-color:e0e0d5;}
+.buttn-fix 			{font-size:70%;font-family: tahoma,arial,Geneva,Helvetica,sans-serif;background-color:e0e0d5;width:7.5em;}
+
+.form-title			{color:white;}
+	
+a 					{text-decoration:none;}
+a:hover 			{text-decoration:underline; color:339900;}
+.tabs		 		{font-family:tahoma,arial,geneva,sans-serif; font-size: 10px;}
+a.link:hover		{text-decoration:underline; color:66ff66;}
+
+.label,.text,.link 	{font-size:70%;font-family: tahoma,arial,Geneva,Helvetica,sans-serif;}
+.nospace			{line-height:2px;}
+.sentance,ul 		{FONT-FAMILY: Arial, sans-serif; FONT-SIZE: 80%; LINE-HEIGHT: 131%}
+
+
+td,p				{font-family: tahoma,arial,Geneva,Helvetica,sans-serif;}	
+th					{text-align:left;font-weight:normal;}	
+b,.b 				{font-weight:bold;}
+.text_bold 			{font-weight:bold;}
+.h3,h3,.subhead		{font-size:90%;line-height:120%;font-family:arial,geneva,helvetica,sans-serif;}	
+.pagedivider		{font-size:90%;line-height:120%;font-family:arial,geneva,helvetica,sans-serif;}	
+
+.input 				{width:250px;}
+.error 				{color:red;}
+.success 			{color:green;}
+
+.itemsml 			{FONT-FAMILY: Verdana, Geneva, Arial, sans-serif; FONT-SIZE: 65%; LINE-HEIGHT: 150%; font-weight: bold; color:333399;}
+.headline			{font-family:arial;font-size:85%; color:6699cc;}

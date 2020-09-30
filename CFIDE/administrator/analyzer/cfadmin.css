@@ -1,0 +1,99 @@
+.color-title {
+	BACKGROUND-COLOR: #888885; COLOR: white; ackground-color: #7A8FA4
+}
+.color-header {
+	BACKGROUND-COLOR: #ddddd5
+}
+.color-buttons {
+	BACKGROUND-COLOR: #ccccc5
+}
+.color-border {
+	BACKGROUND-COLOR: #666666
+}
+.color-row {
+	BACKGROUND-COLOR: #fffff5
+}
+.color-rowalert {
+	BACKGROUND-COLOR: #ffddaa
+}
+.buttn {
+	BACKGROUND-COLOR: #e0e0d5; FONT-FAMILY: tahoma,arial,Geneva,Helvetica,sans-serif; FONT-SIZE: 0.7em
+}
+.buttn-fix {
+	BACKGROUND-COLOR: #e0e0d5; FONT-FAMILY: tahoma,arial,Geneva,Helvetica,sans-serif; FONT-SIZE: 0.7em; WIDTH: 7.5em
+}
+.form-title {
+	COLOR: white
+}
+A {
+	TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #339900; TEXT-DECORATION: underline
+}
+.link {
+	FONT-FAMILY: tahoma,arial,geneva,sans-serif; FONT-SIZE: 0.7em; LINE-HEIGHT: 1.25em
+}
+.tabs {
+	FONT-FAMILY: tahoma,arial,geneva,sans-serif; FONT-SIZE: 10px
+}
+A.link:hover {
+	COLOR: #66ff66; TEXT-DECORATION: underline
+}
+.label {
+	FONT-FAMILY: tahoma,arial,Geneva,Helvetica,sans-serif; FONT-SIZE: 0.7em
+}
+.text {
+	FONT-FAMILY: tahoma,arial,Geneva,Helvetica,sans-serif; FONT-SIZE: 0.7em
+}
+.nospace {
+	LINE-HEIGHT: 2px
+}
+.sentance {
+	FONT-FAMILY: arial,Geneva,Helvetica,sans-serif; FONT-SIZE: 0.75em; LINE-HEIGHT: 1.5em
+}
+UL {
+	FONT-FAMILY: arial,Geneva,Helvetica,sans-serif; FONT-SIZE: 0.75em; LINE-HEIGHT: 1.5em
+}
+TD {
+	FONT-FAMILY: tahoma,arial,Geneva,Helvetica,sans-serif
+}
+P {
+	FONT-FAMILY: tahoma,arial,Geneva,Helvetica,sans-serif
+}
+TH {
+	FONT-WEIGHT: normal; TEXT-ALIGN: left
+}
+B {
+	FONT-WEIGHT: bold
+}
+.b {
+	FONT-WEIGHT: bold
+}
+.text_bold {
+	FONT-WEIGHT: bold
+}
+.h3 {
+	FONT-FAMILY: arial,geneva,helvetica,sans-serif; FONT-SIZE: 0.9em; LINE-HEIGHT: 1.2em
+}
+H3 {
+	FONT-FAMILY: arial,geneva,helvetica,sans-serif; FONT-SIZE: 0.9em; LINE-HEIGHT: 1.2em
+}
+.pagedivider {
+	FONT-FAMILY: arial,geneva,helvetica,sans-serif; FONT-SIZE: 0.9em; LINE-HEIGHT: 1.2em
+}
+.subhead {
+	COLOR: black; FONT-FAMILY: arial,Geneva,Helvetica,sans-serif; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.buttnText {
+	FONT-SIZE: 10px
+}
+.input {
+	WIDTH: 250px
+}
+.error {
+	COLOR: red
+}
+.success {
+	COLOR: green
+}

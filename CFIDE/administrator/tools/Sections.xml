@@ -1,0 +1,186 @@
+<collection list="SectionValue">
+<directory name="Debugging">
+   <inputfile>../include/buttonbar.cfm,*.cfm</inputfile>
+   <inputdir>administrator/debugging</inputdir>
+   <outputfile>debugging.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="entman">
+   <inputfile>*.cfm</inputfile>
+   <inputdir>administrator/entman</inputdir>
+   <outputfile>entman.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="EventGateway">
+   <inputfile>../include/buttonbar.cfm,*.cfm</inputfile>
+   <inputdir>administrator/eventgateway</inputdir>
+   <outputfile>eventgateway.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="Archives">
+   <inputfile>*</inputfile>
+   <inputdir>administrator/archives</inputdir>
+   <outputfile>archives.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="reports">
+   <inputfile>*.cfm,drivers/*</inputfile>
+   <inputdir>administrator/reports</inputdir>
+   <outputfile>reports.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="Code">
+   <inputfile>*.cfm,drivers/*</inputfile>
+   <inputdir>administrator/analyzer</inputdir>
+   <outputfile>code.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="migrate">
+   <inputfile>*.cfm,drivers/*</inputfile>
+   <inputdir>administrator/migration</inputdir>
+   <outputfile>migrate.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="Weinre">
+   <inputfile>*.cfm</inputfile>
+   <inputdir>administrator/weinre</inputdir>
+   <outputfile>weinre.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="Updates">
+   <inputfile>*</inputfile>
+   <inputdir>administrator/updates</inputdir>
+   <outputfile>updates.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="General">
+   <inputfile>include/*.*,filedialog/*.*,/*.cfm</inputfile>
+   <inputdir>administrator/</inputdir>
+   <outputfile>general.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="J2EE">
+   <inputfile>*.cfm</inputfile>
+   <inputdir>administrator/j2eepackaging</inputdir>
+   <outputfile>j2ee.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="Logging">
+   <inputfile>../include/buttonbar.cfm,*.cfm</inputfile>
+   <inputdir>administrator/logging</inputdir>
+   <outputfile>logging.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="logviewer">
+   <inputfile>*.cfm</inputfile>
+   <inputdir>administrator/logviewer</inputdir>
+   <outputfile>logviewer.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="Mail">
+   <inputfile>../include/buttonbar.cfm,*.cfm</inputfile>
+   <inputdir>administrator/mail</inputdir>
+   <outputfile>mail.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="Monitoring">
+   <inputfile>../include/buttonbar.cfm,*.cfm</inputfile>
+   <inputdir>administrator/monitor</inputdir>
+   <outputfile>monitor.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="Extensions">
+   <inputfile>include/buttonbar.cfm,extensions/*,document/*</inputfile>
+   <inputdir>administrator/</inputdir>
+   <outputfile>extensions.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+
+
+<directory name="Scheduler">
+   <inputfile>../include/buttonbar.cfm,*.cfm</inputfile>
+   <inputdir>administrator/scheduler</inputdir>
+   <outputfile>scheduler.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="Security">
+   <inputfile>../include/buttonbar.cfm,*.cfm,../login.cfm</inputfile>
+   <inputdir>administrator/security</inputdir>
+   <outputfile>security.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="Solr">
+   <inputfile>../include/buttonbar.cfm,*</inputfile>
+   <inputdir>administrator/solr</inputdir>
+   <outputfile>solr.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error,col_</lowpriority>
+</directory>
+<directory name="Settings">
+   <inputfile>../include/buttonbar.cfm,*</inputfile>
+   <inputdir>administrator/settings</inputdir>
+   <outputfile>settings.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="Datasource">
+   <inputfile>*.cfm,drivers/*</inputfile>
+   <inputdir>administrator/datasources</inputdir>
+   <outputfile>datasources.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error</lowpriority>
+</directory>
+<directory name="CFAdmin">
+   <inputfile>*.cfm,*.cfc,setup/*,components/*</inputfile>
+   <inputdir>administrator/</inputdir>
+   <outputfile>cfadmin.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error,col_</lowpriority>
+</directory>
+<directory name="scanner">
+   <inputfile>include/buttonbar.cfm,scanner/*</inputfile>
+   <inputdir>administrator/</inputdir>
+   <outputfile>scan.cfm</outputfile>
+   <outputdir>administrator/cftags/resources</outputdir>
+   <lowpriority>error,col_</lowpriority>
+</directory>
+<directory name="adminapi">
+   <inputfile>*.cfc</inputfile>
+   <inputdir>adminapi</inputdir>
+   <outputfile>adminapi.cfm</outputfile>
+   <outputdir>adminapi/customtags/resources/</outputdir>
+   <lowpriority>error,col_</lowpriority>
+</directory>
+<directory name="experience">
+   <inputfile>*</inputfile>
+   <inputdir>gettingstarted/experience</inputdir>
+   <outputfile>experience.cfm</outputfile>
+   <outputdir>gettingstarted/experience/cftags/resources/</outputdir>
+   <lowpriority>error,col_</lowpriority>
+</directory>
+<directory name="snippets">
+   <inputfile>*</inputfile>
+   <inputdir>gettingstarted/experience/snippets</inputdir>
+   <outputfile>snippets.cfm</outputfile>
+   <outputdir>gettingstarted/experience/snippets/</outputdir>
+   <lowpriority>error,col_</lowpriority>
+</directory>
+</collection>

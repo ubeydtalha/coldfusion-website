@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="pageTitle">
+		<value>ColdFusion マルチサーバーモニタ</value>
+	</data>
+	<data name="minimumPasswordLength">
+		<value>パスワードは 4 文字以上にしてください。</value>
+	</data>
+	<data name="confirmRemoveTitle">
+		<value>削除の確認</value>
+	</data>
+	<data name="confirmRemoveAll">
+		<value>すべてのサーバーを削除してもよろしいですか。</value>
+	</data>
+	<data name="confirmRemove">
+		<value>このサーバーを削除してもよろしいですか。</value>
+	</data>
+	<data name="selectServerToEdit">
+		<value>編集するサーバーを選択してください。</value>
+	</data>
+	<data name="error">
+		<value>エラー。</value>
+	</data>
+	<data name="logout">
+		<value>ログアウト</value>
+	</data>
+	<data name="add">
+		<value>追加</value>
+	</data>
+	<data name="edit">
+		<value>編集</value>
+	</data>
+	<data name="remove">
+		<value>削除</value>
+	</data>
+	<data name="monitor">
+		<value>監視</value>
+	</data>
+	<data name="removeAll">
+		<value>すべて削除</value>
+	</data>
+	<data name="servers">
+		<value>サーバー</value>
+	</data>
+	<data name="retry">
+		<value>再試行</value>
+	</data>
+	<data name="resetPassword">
+		<value>パスワードをリセット</value>
+	</data>
+	<data name="incorrectPasswordDesc">
+		<value>パスワードが正しくありません。[パスワードをリセット] をクリックしてパスワードを入力し、マスターパスワードをリセットしてください。ただし、すべてのサーバーのパスワードを再入力する必要があります。</value>
+	</data>
+	<data name="noMasterPassword">
+		<value>マスターパスワードが設定されていません。</value>
+	</data>
+	<data name="setNewPassword">
+		<value>新しいパスワードを設定</value>
+	</data>
+	<data name="serverIP_noBlank">
+		<value>サーバーの IP は空白にできません。</value>
+	</data>
+	<data name="serverIP_noSpecialChars">
+		<value>サーバーの IP に特殊文字を含めることはできません。</value>
+	</data>
+	<data name="port_noBlank">
+		<value>ポートは空白にできません。</value>
+	</data>
+	<data name="port_onlyDigits">
+		<value>ポートに指定できるのは数字のみです。</value>
+	</data>
+	<data name="username_noBlank">
+		<value>ユーザー名は空白にできません。</value>
+	</data>
+	<data name="password_noBlank">
+		<value>パスワードは空白にできません。</value>
+	</data>
+	<data name="errorInInput">
+		<value>入力にエラーがあります。</value>
+	</data>
+
+	<data name="errorsLbl">
+		<value>エラー</value>
+	</data>
+	<data name="statistics">
+		<value>統計情報</value>
+	</data>
+
+	<data name="permissionDenied">
+		<value>必要な権限がありません</value>
+	</data>
+	<data name="crossdomainHelpMsg">
+		<value> crossdomain.xml ファイルを変更して、このサーバーに対するアクセスが許可されていることを確認してください。</value>
+	</data>
+
+	<data name="resetPasswordWarning">
+		<value>マスターパスワードをリセットしました。すべてのサーバーのパスワードを再入力する必要があります。</value>
+	</data>
+	<data name="warning">
+		<value>警告。</value>
+	</data>
+	<data name="warnings">
+		<value>警告</value>
+	</data>
+	<data name="notConnected">
+		<value>未接続</value>
+	</data>
+	<data name="noData">
+		<value>データなし</value>
+	</data>
+	<data name="noAlerts">
+		<value>アラートなし</value>
+	</data>
+	<data name="noWarnings">
+		<value>警告なし</value>
+	</data>
+	<data name="unresponsiveAlert">
+		<value>無応答サーバー</value>
+	</data>
+	<data name="jvmAlert">
+		<value>JVM メモリ</value>
+	</data>
+	<data name="timeoutsAlert">
+		<value>タイムアウト</value>
+	</data>
+	<data name="slowAlert">
+		<value>低速サーバー</value>
+	</data>
+	<data name="alertsSuffix">
+		<value> アラート</value>
+	</data>
+	<data name="loggingIn">
+		<value>ログインしています...</value>
+	</data>
+	<data name="connected">
+		<value>接続済み</value>
+	</data>
+	<data name="disconnected">
+		<value>切断済み</value>
+	</data>
+	<data name="unreachable">
+		<value>到達不能</value>
+	</data>
+	<data name="loginSuccess">
+		<value>ログイン済み</value>
+	</data>
+	<data name="loginFailed">
+		<value>ログイン失敗</value>
+	</data>
+	<data name="connectionError">
+		<value>接続エラー</value>
+	</data>
+	<data name="unresponsive_alert">
+		<value>無応答サーバーのアラート。</value>
+	</data>
+	<data name="unresponsive_warning">
+		<value>無応答サーバーの警告。\n</value>
+	</data>
+
+	<data name="slow_alert">
+		<value>低速サーバーの警告。</value>
+	</data>
+	<data name="slow_warning">
+		<value>低速サーバーのアラート。</value>
+	</data>
+
+	<data name="jvm_alert">
+		<value>JVM メモリのアラート。</value>
+	</data>
+	<data name="jvm_warning">
+		<value>JVM メモリの警告。</value>
+	</data>
+
+	<data name="timeouts_alert">
+		<value>タイムアウトのアラート。</value>
+	</data>
+	<data name="timeouts_warning">
+		<value>タイムアウトの警告。\n</value>
+	</data>
+
+	<data name="masterPasswordTitle">
+		<value>マスターパスワード</value>
+	</data>
+	<data name="enterMasterPassword">
+		<value>マスターパスワードを入力 :</value>
+	</data>
+	<data name="login">
+		<value>ログイン</value>
+	</data>
+	<data name="addMessage">
+		<value>登録しようとしている ColdFusion サーバーを監視するには、wwwroot/crossdomain.xml ファイルに &lt;allow-access-from domain="*"/&gt; という行を追加します。また、サーバーの Server Monitoring と Flash Remoting を有効にする必要もあります。このマルチサーバーモニターだけにサーバーを制限するには、* の代わりに、マルチサーバーモニターを実行しているサーバーの IP アドレスを指定してください。</value>
+	</data>
+	<data name="addMessageNote">
+		<value>注意 : 監視サーバーを有効にしてある場合は、そのポートを指定します。それ以外の場合は、アプリケーションサーバーのポートを指定します。必要な場合は、HTTPS を指定します。J2EE のデプロイの場合は、コンテキストを指定しないでください。この場合は、crossdomain.xml ファイルを /&lt;CFROOT&gt;/MonitoringServer/crossdomain.xml. に配置する必要があります。</value>
+	</data>
+	<data name="addServer">
+		<value>サーバーを追加</value>
+	</data>
+	<data name="editServer">
+		<value>サーバーを編集</value>
+	</data>
+	<data name="duplicateServer">
+		<value>サーバーが既に存在します</value>
+	</data>
+	<data name="duplicateServerError">
+		<value>重複サーバーエラー</value>
+	</data>
+	<data name="noError">
+		<value>エラーなし</value>
+	</data>
+	<data name="MB">
+		<value> MB</value>
+	</data>
+	<data name="connecting">
+		<value>接続しています...</value>
+	</data>
+	<data name="slow">
+		<value>低速</value>
+	</data>
+	<data name="unresponsive">
+		<value>無応答</value>
+	</data>
+	<data name="seconds">
+		<value> 秒</value>
+	</data>
+	<data name="activeReq">
+		<value>アクティブなリクエスト</value>
+	</data>
+	<data name="reqPerSec">
+		<value>リクエスト / 秒</value>
+	</data>
+	<data name="responseTime">
+		<value>応答時間</value>
+	</data>
+	<data name="alert">
+		<value>アラート</value>
+	</data>
+	<data name="alerts">
+		<value>アラート</value>
+	</data>
+	<data name="errors">
+		<value>エラー</value>
+	</data>
+	<data name="online">
+		<value>オンライン</value>
+	</data>
+	<data name="details">
+		<value>詳細</value>
+	</data>
+	<data name="contextRoot">
+		<value>コンテキストルート</value>
+	</data>
+	<data name="https">
+		<value>HTTPS</value>
+	</data>
+	<data name="runningFor">
+		<value>実行対象</value>
+	</data>
+	<data name="runningReq">
+		<value>実行中のリクエスト</value>
+	</data>
+	<data name="queuedReq">
+		<value>実行待ちのリクエスト</value>
+	</data>
+	<data name="totalMemory">
+		<value>合計 JVM メモリ</value>
+	</data>
+	<data name="freeMemory">
+		<value>空き JVM メモリ</value>
+	</data>
+	<data name="usedMemory">
+		<value>使用 JVM メモリ</value>
+	</data>
+	<data name="totalErrors">
+		<value>合計エラー数</value>
+	</data>
+	<data name="timeouts">
+		<value>タイムアウト</value>
+	</data>
+	<data name="pathToCFIDE">
+		<value>サーバーの CFIDE ディレクトリへのパス</value>
+	</data>
+	<data name="Port">
+		<value>ポート</value>
+	</data>
+	<data name="connectionDetails">
+		<value>接続の詳細</value>
+	</data>
+	<data name="connectionInformation">
+		<value>接続情報</value>
+	</data>
+	<data name="loginInfo">
+		<value>ログイン情報</value>
+	</data>
+	<data name="ok">
+		<value>OK</value>
+	</data>
+	<data name="cancel">
+		<value>キャンセル</value>
+	</data>
+	<data name="password">
+		<value>パスワード</value>
+	</data>
+	<data name="username">
+		<value>ユーザー名</value>
+	</data>
+	<data name="status">
+		<value>ステータス</value>
+	</data>
+	<data name="faultDetail">
+		<value>失敗の詳細</value>
+	</data>
+	<data name="faultString">
+		<value>失敗文字列</value>
+	</data>
+	<data name="faultCode">
+		<value>失敗コード</value>
+	</data>
+	<data name="errorPerServer">
+		<value>各サーバーで最後に返されたエラー</value>
+	</data>
+	<data name="server">
+		<value>サーバー</value>
+	</data>
+	<data name="serverErrorDetails">
+		<value>エラーの詳細</value>
+	</data>
+	<data name="errorTime">
+		<value>エラーの時刻</value>
+	</data>
+	<data name="total">
+		<value>合計</value>
+	</data>
+	<data name="refresh">
+		<value>更新</value>
+	</data>
+	<data name="help">
+		<value>ヘルプ</value>
+	</data>
+	<data name="detailView">
+		<value>詳細ビュー</value>
+	</data>
+	<data name="quickView">
+		<value>クイックビュー</value>
+	</data>
+	<data name="days_abbr">
+		<value>日</value>
+	</data>
+	<data name="hours_abbr">
+		<value>時間</value>
+	</data>
+	<data name="minutes_abbr">
+		<value>分</value>
+	</data>
+	<data name="seconds_abbr">
+		<value>秒</value>
+	</data>
+</root>

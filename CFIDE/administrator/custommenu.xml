@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<menu>
+
+<!--  To use the xml custom menu extension simply copy and modify the following example <menu> block.  Treat menuitem as you would an anchor tag.  The submenu label attribtute will be shown as a top-level button on the navigation pane
+	1. Each 'menuitem' child of submenu is a separate settings page
+	2. Include the file 'CFIDE/administrator/include/styles.html' for every 'menuitem' so that the
+	   necessary styles get applied properly
+		Example: <cfinclude template="../include/styles.html">
+	3. Place each 'menuitem' page preferably inside a folder. This is to ensure that the font and
+		body styles get applied properly.
+		Example: '<menuitem href="custom/custom1.cfm">Custom 1</menuitem>'.
+	4. For each 'submenu' group, include an image in CFIDE/administrator/images folder
+	   This is the image which will appear on the left navigation pane. If no image is
+	   specified, a default image will be put.
+	   For first submenu group, image name should be 'customsubmenu1.png'
+	   For the second, 'customsubmenu2.png', etc. 
+
+	<submenu label="Custom Server Settings">
+		<menuitem href="custom/custom1.cfm">Custom 1</menuitem>
+		<menuitem href="custom/custom2.cfm">Custom 2</menuitem>
+	</submenu>
+-->
+	
+</menu>
+

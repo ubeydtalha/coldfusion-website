@@ -1,0 +1,2200 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<root>
+		<data name="sRequestStatistics">
+<value>リクエストの統計情報</value>
+        </data>
+
+        <data name="ColdFusion">
+<value>ColdFusion</value>
+        </data>
+
+        <data name="MonitorOptions">
+<value>モニタオプション</value>
+        </data>
+
+        <data name="starting">
+<value>起動中 </value>
+        </data>
+
+        <data name="started">
+<value>起動済み</value>
+        </data>
+
+        <data name="stopping">
+<value>停止中 </value>
+        </data>
+
+        <data name="stopped">
+<value>停止済み </value>
+        </data>
+
+        <data name="_Monitoring">
+<value>監視中</value>
+        </data>
+
+        <data name="Monitoring">
+<value> 監視中</value>
+        </data>
+
+        <data name="enabling">
+<value>有効化中</value>
+        </data>
+
+        <data name="Enabled">
+<value>有効化済み</value>
+        </data>
+
+        <data name="enabled">
+<value>有効化済み </value>
+        </data>
+
+        <data name="disabling">
+<value>無効化中</value>
+        </data>
+
+        <data name="disabled">
+<value>無効化済み </value>
+        </data>
+
+        <data name="Profiling">
+<value> プロファイリング</value>
+        </data>
+
+        <data name="MemTracking">
+<value> メモリトラッキング</value>
+        </data>
+
+        <data name="cf_Monitor">
+<value>ColdFusion サーバーモニタ</value>
+        </data>
+
+        <data name="updateStr">
+<value>適用</value>
+        </data>
+
+        <data name="resetStr">
+<value>元に戻す</value>
+        </data>
+
+        <data name="_applying">
+<value>適用中 </value>
+        </data>
+
+        <data name="_applied">
+<value>適用済み </value>
+        </data>
+
+        <data name="settingsMsg">
+<value>設定が変更されました。続行するには、[適用] か [元に戻す] をクリックしてください。</value>
+        </data>
+
+        <data name="infoCaption">
+<value>情報</value>
+        </data>
+
+        <data name="errorCaption">
+<value>エラー</value>
+        </data>
+
+        <data name="confirmCaption">
+<value>確認</value>
+        </data>
+
+        <data name="retry">
+<value>再試行</value>
+        </data>
+
+        <data name="refreshCaption">
+<value>更新</value>
+        </data>
+
+        <data name="startStr">
+<value>起動</value>
+        </data>
+
+        <data name="stopStr">
+<value>停止</value>
+        </data>
+
+        <data name="ms">
+<value>(ms)</value>
+        </data>
+
+        <data name="_seconds">
+<value>秒</value>
+        </data>
+
+        <data name="seconds">
+<value>(秒)</value>
+        </data>
+
+        <data name="bytes">
+<value>(バイト)</value>
+        </data>
+
+        <data name="_kb">
+<value>KB</value>
+        </data>
+
+        <data name="kb">
+<value>(KB)</value>
+        </data>
+
+        <data name="mb">
+<value>(MB)</value>
+        </data>
+
+        <data name="yes">
+<value>はい</value>
+        </data>
+
+        <data name="no">
+<value>いいえ</value>
+        </data>
+
+        <data name="_timeStr">
+<value>時刻</value>
+        </data>
+
+        <data name="timeStr">
+<value>時刻 </value>
+        </data>
+
+        <data name="clearing">
+<value>クリア中 </value>
+        </data>
+
+        <data name="cleared">
+<value>クリア済み </value>
+        </data>
+
+        <data name="statistics">
+<value>統計情報</value>
+        </data>
+
+        <data name="statistics1">
+<value>ページの統計情報</value>
+        </data>
+
+        <data name="recentStr">
+<value>最近</value>
+        </data>
+
+        <data name="resetAllStatistics">
+<value>すべての統計情報をリセット</value>
+        </data>
+
+        <data name="servStatusSummary">
+<value>要約</value>
+        </data>
+
+        <data name="sizeStr">
+<value>サイズ</value>
+        </data>
+
+        <data name="resetStats">
+<value>統計情報をリセット</value>
+        </data>
+
+        <data name="countStr">
+<value>カウント</value>
+        </data>
+
+        <data name="Threshold">
+<value>しきい値</value>
+        </data>
+
+        <data name="refInterValGraph">
+<value>グラフの更新間隔</value>
+        </data>
+
+        <data name="refInterValReports">
+<value>レポートの更新間隔</value>
+        </data>
+
+        <data name="statusLineLength">
+<value>ステータスボックスのメッセージ数</value>
+        </data>
+
+        <data name="TOPMEMORYUSEDREQUESTCNT">
+<value>メモリ使用量の多いリクエスト</value>
+        </data>
+
+        <data name="TOPMEMORYUSEDThreads">
+<value>メモリ使用量の多い CF スレッド</value>
+        </data>
+
+        <data name="TOPSLOWREQUESTCNT">
+<value>低速なリクエスト</value>
+        </data>
+
+        <data name="TOPSLOWThreads">
+<value>低速な ColdFusion スレッド</value>
+        </data>
+
+        <data name="TOPHITCOUNTREQUESTCNT">
+<value>ヒット数の多いリクエスト</value>
+        </data>
+
+        <data name="REQUESTCNTWITHERRORS">
+<value>エラーが発生したリクエスト</value>
+        </data>
+
+        <data name="TIMEDOUTREQUESTCNT">
+<value>タイムアウトしたリクエスト</value>
+        </data>
+
+        <data name="TOPMEMORYUSEDSESSIONCNT">
+<value>メモリ使用量の多いセッション</value>
+        </data>
+
+        <data name="TOPAVERAGESLOWQUERYCNT">
+<value>平均で低速なクエリー</value>
+        </data>
+
+        <data name="TOPMEMORYUSEDQUERYCNT">
+<value>メモリ使用量の多いクエリー</value>
+        </data>
+
+        <data name="TOPSLOWQUERYCNT">
+<value>低速なクエリー</value>
+        </data>
+
+        <data name="viewButtonToolTip">
+<value>スナップショットを表示</value>
+        </data>
+
+        <data name="abortButtonToolTip">
+<value>リクエストを中止</value>
+        </data>
+
+        <data name="unresponsiveserveralert">
+<value>無応答サーバーのアラート</value>
+        </data>
+
+        <data name="SLOWSERVERALERT">
+<value>低速サーバーのアラート</value>
+        </data>
+
+        <data name="timeoutsalert">
+<value>タイムアウトのアラート</value>
+        </data>
+
+        <data name="HUNGTRHREADCOUNT">
+<value>ハングしているスレッド数</value>
+        </data>
+		
+        <data name="BUSYTIMETHRESHOLD">
+<value>ビジースレッド時間</value>
+        </data>
+
+        <data name="hungServerNotes">
+<value>[ハングしているスレッド数] に指定した数のスレッドが、[ビジースレッド時間] よりも長く実行された場合、サーバーは無応答とみなされます。</value>
+        </data>
+
+        <data name="cfc">
+<value>このアラートを処理する CFC</value>
+        </data>
+
+        <data name="cfcNotes">
+<value>(このアラートを処理する CFC を指定してください)</value>
+        </data>
+
+        <data name="cfcNotes1">
+<value>メモ :アラート CFC には onAlert() という関数が必要です。この関数は引数を取らず値も返しません。</value>
+        </data>
+
+        <data name="RESPONSETIMETHRESHOLD">
+<value>応答時間のしきい値</value>
+        </data>
+
+        <data name="slowServerNotes">
+<value>サーバーの平均応答時間が指定のしきい値を超えると、このアラートが生成されます。</value>
+        </data>
+
+        <data name="monitorCFAdmin">
+<value>ColdFusion Administrator を監視。</value>
+        </data>
+
+        <data name="excludeMsg">
+<value>サーバーモニタの監視対象から除外する絶対パスを指定してください。</value>
+        </data>
+
+        <data name="includeMsg">
+<value>サーバーモニタの監視対象に含める絶対パスを指定してください。</value>
+        </data>
+
+        <data name="rules">
+<value><![CDATA[ [除外するパス] と [含めるパス] にパスを指定しなかった場合は、ColdFusion サーバーに関するすべての情報がサーバーモニタによって収集されます。<br>[除外するパス] と [含めるパス] の両方に同じパスを指定した場合、そのパスは除外されます。<br>[含めるパス] に ColdFusion Administrator のパスを指定しても、「<b>ColdFusion Administrator を監視</b>」オプションが有効でなければ、そのパスは除外されます。]]></value>
+        </data>
+
+        <data name="profilingRules">
+<value><![CDATA[<b>含めるパスと除外するパスに関する規則 :</b> <br><ol><li>すべて絶対パスで指定します。<li>[含めるパス] と [除外するパス] に何も指定しなかった場合は、すべてが含められます。<li>[含めるパス] と [除外するパス] の両方に同じパスを指定した場合、そのパスは除外されます。<li>あるパスを含めてそのサブパスの一部を除外したい場合、たとえば "C:\\Cfusion8\\wwwroot\\MyProjects\\" を含めて "C:\\Cfusion8\\wwwroot\\MyProjects\\Project1\\" を除外したい場合は、前者を [含めるパス] に指定し、後者を [除外するパス] に指定します。<li>ColdFusion Administrator のどのページを [含めるパス] に指定しても、[ColdFusion Administrator を監視] チェックボックスが選択されていなければ、そのページは監視されません。</ol>]]></value>
+        </data>
+
+        <data name="sActiveRequests">
+<value>アクティブなリクエスト</value>
+        </data>
+
+        <data name="sActiveCFThreads">
+<value>アクティブな ColdFusion スレッド</value>
+        </data>
+
+        <data name="sActiveSessions">
+<value>アクティブなセッション</value>
+        </data>
+
+        <data name="sCumulativeServerTimeSpent">
+<value>累積サーバー使用量の多いリクエスト</value>
+        </data>
+
+        <data name="sTemplateCacheStatus">
+<value>テンプレートキャッシュのステータス</value>
+        </data>
+
+        <data name="sThrottleStatus">
+<value>リクエストスロットルデータ</value>
+        </data>
+
+        <data name="sMemoryUtilization">
+<value>メモリ使用量</value>
+        </data>
+
+        <data name="sMemoryUtilizationSummary">
+<value>メモリ使用量の要約</value>
+        </data>
+
+        <data name="sApplicationScopeMemoryUsed">
+<value>アプリケーションスコープでのメモリ使用量</value>
+        </data>
+
+        <data name="sServerScopeMemoryUsed">
+<value>サーバースコープでのメモリ使用量</value>
+        </data>
+
+        <data name="sDatabase">
+<value>データベース</value>
+        </data>
+
+        <data name="DSN">
+<value>データソース</value>
+        </data>
+
+        <data name="sActiveQueries">
+<value>アクティブなクエリー</value>
+        </data>
+
+        <data name="sCached">
+<value>キャッシュ済み</value>
+        </data>
+
+        <data name="sFreqActiveQueries">
+<value>実行頻度の高いクエリー</value>
+        </data>
+
+        <data name="sCachedQueries">
+
+<value>キャッシュ済みのクエリー</value>
+        </data>
+
+        <data name="sQueryCacheStatus">
+<value>クエリーキャッシュのステータス</value>
+        </data>
+
+        <data name="sDBPoolStatus">
+<value>プールのステータス</value>
+        </data>
+
+        <data name="sErrors">
+<value>エラー</value>
+        </data>
+
+        <data name="sAlertsandSnapshots">
+<value>アラートとスナップショット</value>
+        </data>
+
+        <data name="sAlert">
+<value>アラート</value>
+        </data>
+
+        <data name="sAlerts">
+<value>アラート</value>
+        </data>
+
+        <data name="sAlertSettings">
+<value>アラートの設定</value>
+        </data>
+
+        <data name="sUserSnapshots">
+<value>ユーザーのスナップショット</value>
+        </data>
+
+        <data name="sSettings">
+<value>設定</value>
+        </data>
+
+        <data name="sMonSettings">
+<value>モニタの設定</value>
+        </data>
+
+        <data name="sFilterSettings">
+<value>フィルタの設定</value>
+        </data>
+
+        <data name="sUISettings">
+<value>全般</value>
+        </data>
+
+        <data name="sAliasingSettings">
+<value>エイリアス</value>
+        </data>
+
+        <data name="TemplatePath">
+<value>テンプレートのパス</value>
+        </data>
+
+        <data name="stackTrace">
+<value>CFML スタックトレース</value>
+        </data>
+
+        <data name="jStackTrace">
+<value>Java スタックトレース</value>
+        </data>
+
+        <data name="SQL">
+<value>SQL</value>
+        </data>
+
+        <data name="THREADNAME">
+<value>スレッド名</value>
+        </data>
+
+        <data name="jTHREADNAME">
+<value>Java のスレッド名</value>
+        </data>
+
+        <data name="CFTHREADNAME">
+<value>ColdFusion のスレッド名</value>
+        </data>
+
+        <data name="spawnedFrom">
+<value>生成されたテンプレートのパス</value>
+        </data>
+
+        <data name="requestTemplatePath">
+<value>リクエストテンプレートのパス</value>
+        </data>
+
+        <data name="LINENUMBER">
+<value>行番号</value>
+        </data>
+
+        <data name="QUERYNAME">
+<value>クエリー名</value>
+        </data>
+
+        <data name="requestDetails">
+	<value><![CDATA[低速なタグと関数のトップ 10]]></value>
+        </data>
+
+        <data name="VarbyMem">
+	<value>メモリ使用量の多い変数のトップ 10</value>
+        </data>
+
+        <data name="deleteAllSnapshots">
+	<value>すべてのスナップショットを削除</value>
+        </data>
+
+        <data name="deleteAllAlerts">
+	<value>すべてのアラートを削除</value>
+       	</data>
+
+       	<data name="triggerSnapshot">
+	<value>スナップショットを実行</value>
+        </data>
+
+        <data name="viewSnapshotStr">
+	<value>スナップショットを表示</value>
+        </data>
+
+        <data name="deleteSnapShot">
+	<value>スナップショットを削除</value>
+        </data>
+
+        <data name="fileNameStr">
+	<value>ファイル名</value>
+        </data>
+
+        <data name="alertTypeStr">
+	<value>アラートのタイプ</value>
+        </data>
+
+       	<data name="alertIsActive">
+	<value>アクティブ</value>
+        </data>
+
+       	<data name="alertActiveAt">
+	<value>アクティブ</value>
+        </data>
+
+        <data name="alertRecoveredAt">
+	<value>解決</value>
+        </data>
+
+        <data name="alertInvalidatedAt">
+	<value>無効化</value>
+        </data>
+
+        <data name="alertSnapshotFile">
+	<value>スナップショット</value>
+        </data>
+
+        <data name="serverTime">
+	<value>サーバー時間 (%)</value>
+        </data>
+
+        <data name="currentServerTime">
+<value>現在のサーバー時刻 : </value>
+        </data>
+
+        <data name="serverStartTime">
+<value>サーバー起動時刻 : </value>
+        </data>
+
+        <data name="UsedMemory">
+<value>使用メモリ</value>
+        </data>
+
+        <data name="JVMUsedMemory">
+<value>JVM 使用メモリ</value>
+        </data>
+
+        <data name="JVMFreeMemory">
+<value>JVM 空きメモリ</value>
+        </data>
+
+        <data name="AverageResponseTime">
+<value>平均応答時間</value>
+        </data>
+
+        <data name="SessionScopeSize">
+<value>セッションスコープのサイズ</value>
+        </data>
+
+        <data name="AppScopeSize">
+<value>アプリケーションスコープのサイズ</value>
+        </data>
+
+        <data name="ServerScopeSize">
+<value>サーバースコープのサイズ</value>
+        </data>
+
+        <data name="lastSize">
+<value>前回のサイズ</value>
+        </data>
+
+        <data name="avgSize">
+<value>平均サイズ</value>
+        </data>
+
+        <data name="minSize">
+<value>最小サイズ</value>
+        </data>
+
+        <data name="maxSize">
+<value>最大サイズ</value>
+        </data>
+
+        <data name="pageElementTmplatePath">
+<value>呼び出し元 (テンプレートのパス : 行番号)</value>
+        </data>
+
+        <data name="_avgTime">
+<value>平均時間</value>
+        </data>
+
+        <data name="_minTime">
+<value>最小時間</value>
+        </data>
+
+        <data name="_maxTime">
+<value>最大時間</value>
+        </data>
+
+        <data name="avgTime">
+<value>平均実行時間</value>
+        </data>
+
+        <data name="minTime">
+<value>最小実行時間</value>
+        </data>
+
+        <data name="maxTime">
+<value>最大実行時間</value>
+        </data>
+
+        <data name="QueryCacheHitRatio">
+<value>クエリーキャッシュのヒット率</value>
+        </data>
+
+        <data name="CurrentQueryHitRatio">
+<value>クエリーキャッシュのヒット率 :</value>
+        </data>
+
+        <data name="QueryCacheSize">
+<value>クエリーキャッシュのサイズ</value>
+        </data>
+
+        <data name="CachedQueryCount">
+<value>キャッシュされたクエリー数</value>
+        </data>
+
+        <data name="TemplateCacheCount">
+<value>テンプレートキャッシュの数</value>
+        </data>
+
+        <data name="TemplateCacheHitRatio">
+<value>テンプレートキャッシュのヒット率 :</value>
+        </data>
+
+        <data name="TemplateCacheSize">
+<value>テンプレートキャッシュのサイズ</value>
+        </data>
+
+        <data name="notifyClientonAlert">
+            <value>クライアントに通知</value>
+        </data>
+
+        <data name="TotalMemory">
+            <value>最大メモリ</value>
+        </data>
+
+        <data name="TotalMemoryUsed">
+<value>合計使用メモリ</value>
+        </data>
+
+        <data name="ThrottleSize">
+<value>スロットルサイズ</value>
+        </data>
+
+        <data name="ActiveSessionCount">
+<value>アクティブなセッション数</value>
+        </data>
+
+        <data name="LoggedInUsersCount">
+<value>ログインしたユーザー数</value>
+        </data>
+
+        <data name="NumActiveRequestLbl">
+<value>1 秒あたりのリクエスト数</value>
+        </data>
+
+        <data name="NumRequestLbl">
+<value>リクエスト数</value>
+        </data>
+
+        <data name="AverageResponseLbl">
+<value>平均応答時間 (ms)</value>
+        </data>
+
+        <data name="_JVMMemory">
+<value>JVM メモリ</value>
+        </data>
+
+        <data name="JVMMemory">
+<value>JVM メモリ (MB)</value>
+        </data>
+
+        <data name="JVMMemoryStatus">
+<value>JVM メモリのステータス</value>
+        </data>
+
+        <data name="totalThrottleMemoryUsedLbl">
+<value>合計スロットルメモリ (MB)</value>
+        </data>
+
+        <data name="throttleSizeLbl">
+<value>スロットルサイズ (MB)</value>
+        </data>
+
+        <data name="activeSessionsLbl">
+<value>カウント</value>
+        </data>
+
+        <data name="memoryUsageLbl">
+<value>メモリ使用量</value>
+        </data>
+
+        <data name="queryExecCount">
+<value>実行回数</value>
+        </data>
+
+        <data name="includePaths">
+<value>含めるパス</value>
+        </data>
+
+        <data name="excludePaths">
+<value>除外するパス</value>
+        </data>
+
+        <data name="reqWithErrors">
+<value>エラーが発生したリクエスト</value>
+        </data>
+
+        <data name="reqTimedOut">
+<value>タイムアウトしたリクエスト</value>
+        </data>
+
+        <data name="reportsStr">
+<value>レポート</value>
+        </data>
+
+        <data name="sessionsExceeding">
+<value>次のサイズを超過したセッション : </value>
+        </data>
+
+        <data name="requestsUsingMoreThan">
+<value>次のメモリ使用量を超過したリクエスト : </value>
+        </data>
+
+        <data name="queriesRunningLonger">
+<value>次の時間を超過したクエリー : </value>
+        </data>
+
+        <data name="secsonAvg">
+<value>(平均で)</value>
+        </data>
+
+        <data name="queriesExceedingMoreThan">
+<value>次のサイズを超過したクエリー : </value>
+        </data>
+
+        <data name="requestsRunningSlowerThan">
+<value>次の時間を超過したリクエスト : </value>
+        </data>
+
+        <data name="NoAlerts">
+<value>アラートなし</value>
+        </data>
+
+        <data name="lastErros">
+<value>前回のエラー</value>
+        </data>
+
+        <data name="noErrors">
+<value>エラーなし</value>
+        </data>
+
+        <data name="slowRequests">
+<value>低速なアクティブリクエスト</value>
+        </data>
+
+        <data name="_timeTaken">
+<value>所要時間</value>
+        </data>
+
+        <data name="timeTakenStr">
+<value>実行所要時間</value>
+        </data>
+
+        <data name="pageNeverCompleted">
+<value>未完了</value>
+        </data>
+
+        <data name="lastExecuted">
+<value>前回の実行</value>
+        </data>
+
+        <data name="lastExecutionTime">
+<value>前回の実行時間</value>
+        </data>
+
+        <data name="lastRecentResponseTime">
+<value>最近の応答時間</value>
+        </data>
+
+        <data name="execTime">
+<value>実行時間</value>
+        </data>
+
+        <data name="avgThrottleSize1">
+<value>このテンプレートから送信されたコンテンツの平均長。</value>
+        </data>
+
+        <data name="avgThrottleSize2">
+<value>(この平均は、スロットルのしきい値を超過したテンプレート送信のみを対象にして算出しています。)</value>
+        </data>
+
+        <data name="maxThrottleSize">
+<value>単一のリクエストでこのテンプレートから送信されたコンテンツの最大長。</value>
+        </data>
+
+        <data name="minThrottleSize">
+<value>単一のリクエストでこのテンプレートから送信されたコンテンツの最小長。</value>
+        </data>
+
+        <data name="abortRequestConfirmMsg">
+<value>このリクエストを中止してもよろしいですか。</value>
+        </data>
+
+        <data name="abortThreadConfirmMsg">
+<value>このスレッドを中止してもよろしいですか。</value>
+        </data>
+
+        <data name="clientIPAddress">
+<value>クライアント IP アドレス</value>
+        </data>
+
+        <data name="strGridThrottle">
+<value>グリッド</value>
+        </data>
+
+        <data name="strGridQuery">
+<value>クエリー</value>
+        </data>
+
+        <data name="strGridPool">
+<value>プール</value>
+        </data>
+
+        <data name="strGridSession">
+<value>セッション</value>
+        </data>
+
+        <data name="aborting">
+<value>中止中 </value>
+        </data>
+
+        <data name="aborted">
+<value>中止済み </value>
+        </data>
+
+        <data name="strGridRequest">
+<value>リクエスト</value>
+        </data>
+
+        <data name="strGridThreads">
+<value>スレッド</value>
+        </data>
+
+        <data name="strGridApp">
+<value>アプリケーション</value>
+        </data>
+
+        <data name="strGridGeneral">
+<value>レポート</value>
+        </data>
+
+        <data name="strDetailGeneral">
+<value>詳細</value>
+        </data>
+
+        <data name="strChartGeneral">
+<value>チャート</value>
+        </data>
+
+        <data name="unlimited">
+<value>無制限</value>
+        </data>
+
+        <data name="requestRunning">
+<value>実行中のリクエスト</value>
+        </data>
+
+        <data name="requestsQued">
+<value>実行待ちのリクエスト</value>
+        </data>
+
+        <data name="requestsTimedOut">
+<value>タイムアウトしたリクエスト</value>
+        </data>
+
+        <data name="requestRunningQuesUp">
+<value>実行中と実行待ちのリクエスト</value>
+        </data>
+
+        <data name="templateReqRunning">
+<value>実行中のテンプレート</value>
+        </data>
+
+        <data name="templateReqQued">
+<value>実行待ちのテンプレート</value>
+        </data>
+
+        <data name="templateReqTimedOut">
+<value>タイムアウトしたテンプレート</value>
+        </data>
+
+        <data name="flashReqRunning">
+<value>実行中の Flash Remoting</value>
+        </data>
+
+        <data name="flashReqQueued">
+<value>実行待ちの Flash Remoting</value>
+        </data>
+
+        <data name="flashReqTimedOut">
+<value>タイムアウトした Flash Remoting</value>
+        </data>
+
+        <data name="webSvcRunning">
+<value>実行中の Web サービス</value>
+        </data>
+
+        <data name="webSvcQueued">
+<value>実行待ちの Web サービス</value>
+        </data>
+
+        <data name="webSvcTimedOut">
+<value>タイムアウトした Web サービス</value>
+        </data>
+
+        <data name="cfcRunning">
+<value>実行中の CFC</value>
+        </data>
+
+        <data name="cfcQueued">
+<value>実行待ちの CFC</value>
+        </data>
+
+        <data name="cfcTimedOut">
+<value>タイムアウトした CFC</value>
+        </data>
+
+        <data name="cfThreadsRunning">
+<value>実行中の ColdFusion スレッド</value>
+        </data>
+
+        <data name="cfThreadsQueued">
+<value>実行待ちの ColdFusion スレッド</value>
+        </data>
+
+        <data name="cfThreadRunningQued">
+<value>実行中と実行待ちの ColdFusion スレッド</value>
+        </data>
+
+        <data name="descDSName">
+<value>データソース名</value>
+        </data>
+
+        <data name="descInUseConn">
+<value>プールから現在チェックアウトされている接続数</value>
+        </data>
+
+        <data name="descTotalConn">
+<value>プール内の合計接続数 (使用可能と使用中の両方の接続を含む)</value>
+        </data>
+
+        <data name="descMaxConn">
+<value>このデータソースで設定されている最大可能接続数</value>
+        </data>
+
+        <data name="descAvgTotalConn">
+<value>プール内の合計接続数の平均</value>
+        </data>
+
+        <data name="descAvgInUseConn">
+<value>プールからチェックアウトされている接続数の平均</value>
+        </data>
+
+        <data name="percentage">
+            <value>%</value>
+        </data>
+
+        <data name="FLASHHITCOUNT">
+<value>Flash Remoting リクエストのヒット数</value>
+        </data>
+
+        <data name="GATEWAYHITCOUNT">
+<value>ゲートウェイリクエストのヒット数</value>
+        </data>
+
+        <data name="RCFCHITCOUNT">
+<value>リモート CFC リクエストのヒット数</value>
+        </data>
+
+        <data name="TEMPLATEHITCOUNT">
+<value>テンプレートリクエストのヒット数</value>
+        </data>
+
+        <data name="TOTALHITCOUNT">
+<value>リクエストのヒット数の合計</value>
+        </data>
+
+        <data name="WSHITCOUNT">
+<value>Web サービスリクエストのヒット数</value>
+        </data>
+
+        <data name="reportSizeStr">
+<value>最大表示数 :</value>
+        </data>
+
+        <data name="uri">
+<value>URI</value>
+        </data>
+
+        <data name="strMaxThrottleSize">
+<value>最大スロットルサイズ</value>
+        </data>
+
+        <data name="strAvgThrottleSize">
+<value>平均スロットルサイズ</value>
+        </data>
+
+        <data name="strMinThrottleSize">
+<value>最小スロットルサイズ</value>
+        </data>
+
+        <data name="strMostRecentReqSize">
+<value>最近のリクエストサイズ</value>
+        </data>
+
+        <data name="dataStr">
+<value>データ</value>
+        </data>
+
+        <data name="retrievedData">
+<value>取得済み </value>
+        </data>
+
+        <data name="fetchingData">
+<value>取得中 </value>
+        </data>
+
+        <data name="reportData">
+<value>レポートデータ</value>
+        </data>
+
+        <data name="graphData">
+<value>グラフデータ</value>
+        </data>
+
+        <data name="LogoutError">
+<value>エラーが発生しました。[OK] をクリックしてサーバーモニタを更新してください。</value>
+        </data>
+
+        <data name="AppScopeVars">
+<value>アプリケーションスコープ変数のトップ 10</value>
+        </data>
+
+        <data name="topSessionScopeVar">
+<value>サイズの大きいセッションスコープ変数のトップ 10</value>
+        </data>
+
+        <data name="connInUse">
+<value>使用中の接続数</value>
+        </data>
+
+        <data name="totalConn">
+<value>合計接続数</value>
+        </data>
+
+        <data name="maxConn">
+<value>最大接続数</value>
+        </data>
+
+        <data name="avgConn">
+<value>平均接続数</value>
+        </data>
+
+        <data name="avgConnInUse">
+<value>使用中の接続数の平均</value>
+        </data>
+
+        <data name="sActiveSessionDetails">
+<value>アクティブセッションの詳細</value>
+        </data>
+
+        <data name="deleteAlert">
+<value>アラートを削除</value>
+        </data>
+
+        <data name="generating">
+<value>生成中 </value>
+        </data>
+
+        <data name="generated">
+<value>生成済み </value>
+        </data>
+
+        <data name="deleting">
+<value>削除中</value>
+        </data>
+
+        <data name="notes1">
+<value>作成中 </value>
+        </data>
+
+        <data name="activeRequest0">
+<value><![CDATA[サーバーに対するアクティブなリクエストをすべて示します。<br>CFC に対するリクエストの場合は、リクエストされた CFC 関数の名前も示します。]]></value>
+        </data>
+
+        <data name="activeRequest1">
+<value>このページのアクティブなリクエストの詳細を示します。CFML スタックトレースでは、リクエストの実行状況へのポインタを示します。</value>
+        </data>
+
+        <data name="activeRequest2">
+<value>実行中と実行待ちのリクエスト数のグラフ (スタンドアローンのデプロイのみ)、すべてのリクエストに対するサーバーの平均応答時間、および 1 秒あたりのサーバーの処理リクエスト数を示します。1 秒あたりのリクエスト数および平均応答時間は、60 秒間の計算値です。</value>
+        </data>
+
+        <data name="slowRequest0">
+<value><![CDATA[サーバーに対する低速なリクエストを示します。<br>CFC に対するリクエストの場合は、リクエストされた CFC 関数の名前も示します。]]></value>
+        </data>
+
+        <data name="slowRequest1">
+<value><![CDATA[選択した低速なリクエストの統計情報を示します。プロファイリングがオンになっている場合は、低速なタグおよび関数のトップ 10 と、そのタグまたは関数を<br>呼び出した場所への CFML スタックトレースも示します。]]></value>
+        </data>
+
+        <data name="activeSession0">
+<value>サーバーのアクティブセッションをすべて示します。メモリトラッキングがオンになっている場合は、セッションサイズ情報も示します。</value>
+        </data>
+
+        <data name="activeSession1">
+<value>選択したアクティブセッションの詳細と、そのセッションで使用されたサイズの大きい変数を示します。</value>
+        </data>
+
+        <data name="activeSession2">
+<value><![CDATA[アクティブセッションとログインユーザーの履歴を示します。ログインユーザー数は、CFLOGIN タグを使用してログインしたユーザーの数<br>を示します。]]></value>
+        </data>
+
+        <data name="serverUsage0">
+<value>消費した累積サーバー時間の多いリクエストを示します。累積サーバー時間は、リクエストの平均応答時間にヒット数を乗算して計算されます。短時間で実行されるリクエストでも、ヒット数が高ければサーバー時間の消費割合が高くなることがあります。</value>
+        </data>
+
+        <data name="serverUsage1">
+<value>消費した累積サーバー時間の多いリクエストの統計情報を示します。</value>
+        </data>
+
+        <data name="serverUsage2">
+<value>消費した累積サーバー時間の多いリクエストを円グラフで示します。</value>
+        </data>
+
+        <data name="hitCounts0">
+<value>ヒット数の高いリクエストを示します。</value>
+        </data>
+
+        <data name="hitCounts1">
+<value>ColdFusion の各アクセスモードでのサーバーに対するヒットの要約を示します。アクセスモードには、ブラウザからのテンプレートリクエスト、Web サービスリクエスト、ゲートウェイリクエスト、HTTP 経由のリモート CFC リクエスト、Flash Remoting リクエストなどがあります。</value>
+        </data>
+
+        <data name="tempCacheStat0">
+<value>テンプレートキャッシュに関する情報を示します。キャッシュヒット率は、キャッシュがどれだけ利用されているかを示します。ヒット率が高いほど、テンプレートがファイルシステムではなくキャッシュから取得される割合が高くなるので、パフォーマンスがよくなります。グラフにはキャッシュ動作の履歴ビューが表示されます。</value>
+        </data>
+
+        <data name="throttleStats0">
+<value>サーバーによってスロットルされたリクエストを示します。</value>
+        </data>
+
+        <data name="throttleStats1">
+<value>選択したスロットルされたリクエストの統計情報を示します。</value>
+        </data>
+
+        <data name="throttleStats2">
+<value>合計スロットルメモリおよびスロットルサイズの履歴データを示します。</value>
+        </data>
+
+        <data name="memUtils0">
+<value><![CDATA[パーシスタントスコープ (サーバースコープ、すべてのアプリケーションスコープおよびすべてのセッションスコープ) でのメモリ使用量の要約を示します。<br>このグラフを表示するには、メモリトラッキングを有効にします。]]></value>
+        </data>
+
+        <data name="largeRequest0">
+<value><![CDATA[実行時のメモリ消費量の多いリクエストを示します。<br>このレポートを表示するには、メモリトラッキングを有効にします。]]></value>
+        </data>
+
+        <data name="largeRequest1">
+<value>選択したリクエストの統計情報を示します。プロファイリングがオンになっている場合は、リクエストの実行時に使用されたサイズの大きい変数のトップ 10 も示します。</value>
+        </data>
+
+        <data name="memoryQueries0">
+<value><![CDATA[メモリ消費量の多いデータベースクエリーを示します。<br>このレポートを表示するには、メモリトラッキングとプロファイリングを有効にします。]]></value>
+        </data>
+
+        <data name="largeSession1">
+<value><![CDATA[選択したセッションの詳細情報を示します。<br>このレポートを表示するには、メモリトラッキングを有効にします。]]></value>
+        </data>
+
+        <data name="appScopeMem0">
+<value><![CDATA[すべてのアプリケーションスコープのサイズを示します。<br>このレポートを表示するには、メモリトラッキングを有効にします。]]></value>
+        </data>
+
+        <data name="appScopeMem1">
+<value><![CDATA[選択したアプリケーションの詳細情報を示します。単純変数の場合は値を表示します。複合変数の場合は型を表示します。<br>このレポートを表示するには、メモリトラッキングを有効にします。]]></value>
+        </data>
+
+        <data name="serverScopeMem0">
+<value><![CDATA[サイズの大きいサーバースコープ変数のトップ 10 を示します。単純変数の場合は値を表示します。複合変数の場合は型を表示します。<br>このレポートを表示するには、メモリトラッキングを有効にします。]]></value>
+        </data>
+
+        <data name="activeQueries0">
+<value><![CDATA[すべてのアクティブデータベースクエリーを示します。<br>このレポートを表示するには、プロファイリングを有効にします。]]></value>
+        </data>
+
+        <data name="activeQueries1">
+<value><![CDATA[選択したアクティブクエリーの情報と統計情報を示します。<br>このレポートを表示するには、プロファイリングを有効にします。]]></value>
+        </data>
+
+        <data name="slowQueries0">
+<value><![CDATA[低速なデータベースクエリーを示します。このレポートを表示するには、プロファイリングを有効にします。<br>低速なクエリーの呼び出しも含まれます。クエリーが平均で低速でなくても、クエリーの呼び出しが指定のしきい値を超過していればリストに表示されます。]]></value>
+        </data>
+
+        <data name="slowQueries1">
+<value><![CDATA[選択したクエリーの情報と統計情報を表示します。<br>このレポートにデータを表示するには、プロファイリングを有効にします。]]></value>
+        </data>
+
+        <data name="avgSlowQueries0">
+<value><![CDATA[平均クエリー実行時間が低速なデータベースクエリーを示します。<br>このレポートにデータを表示するには、プロファイリングを有効にします。]]></value>
+        </data>
+
+        <data name="avgSlowQueries1">
+<value>選択したクエリーの情報と統計情報を示します。このレポートにデータを表示するには、プロファイリングを有効にします。このレポートでは平均の情報を示しているので、クエリーの SQL は表示できません。SQL はクエリー呼び出しごとに異なる場合があります。</value>
+        </data>
+
+        <data name="cachedQueries0">
+<value>クエリーキャッシュのすべてのクエリーを示します。正確なデータを表示するには、プロファイリングとメモリトラッキングを有効にします。クエリーキャッシュにクエリーが保存された後にメモリトラッキングを有効にした場合は、個々のクエリーのサイズ情報のみが示されます。</value>
+        </data>
+
+        <data name="cachedQueries1">
+<value>選択したキャッシュされたクエリーの情報を示します。正確なデータを表示するには、プロファイリングとメモリトラッキングを有効にします。クエリーキャッシュにクエリーが保存された後にメモリトラッキングを有効にした場合は、サイズ情報のみが示されます。</value>
+        </data>
+
+        <data name="queryCacheStatus0">
+<value>クエリーキャッシュの情報を示します。クエリーキャッシュのヒット率が高いほど、クエリーがデータベースで実行されるよりもキャッシュから取得される割合が高くなので、パフォーマンスがよくなります。グラフを表示するには、メモリトラッキングとプロファイリングを有効にします。</value>
+        </data>
+
+        <data name="dbPoolStats0">
+<value>すべてのデータベースプールに関する情報を示します。</value>
+        </data>
+
+        <data name="dbPoolStats1">
+<value>選択した接続プールの設定と統計情報を示します。</value>
+        </data>
+
+        <data name="freqUsedQueries0">
+<value>実行頻度の高いクエリーを示します。</value>
+        </data>
+
+        <data name="freqUsedQueries1">
+<value>選択したクエリーの情報と統計情報を示します。このレポートにデータを表示するには、プロファイリングを有効にします。このレポートでは平均の情報を示しているので、クエリーの SQL は表示できません。SQL はクエリー呼び出しごとに異なる場合があります。</value>
+        </data>
+
+        <data name="errorReq0">
+<value>エラーが発生したリクエストをすべて示します。</value>
+        </data>
+
+        <data name="errorReq1">
+<value>エラーが発生した場所を示す CFML と Java の両方のスタックトレースなど、選択したリクエストの詳細を示します。</value>
+        </data>
+
+        <data name="timeOutReq0">
+<value>タイムアウトしたリクエストをすべて示します。</value>
+        </data>
+
+        <data name="timeOutReq1">
+<value>タイムアウトが発生した場所を示す CFML スタックトレースなど、選択したリクエストの詳細を示します。</value>
+        </data>
+
+        <data name="alertList0">
+<value>アラートによって生成されたすべてのスナップショットのリストを表示して管理します。アラートの横にある [スナップショットを表示] アイコンをクリックすると、関連するスナップショットファイルが表示されます。</value>
+        </data>
+
+        <data name="snapshot0">
+<value><![CDATA[ユーザーが生成したスナップショットを表示して管理します。[スナップショットを実行] ボタンを使用してスナップショットを実行できます。<br>スナップショットの横にある [スナップショットを表示] アイコンをクリックすると、関連するスナップショットファイルが表示されます。]]></value>
+        </data>
+
+        <data name="activeCFThread0">
+<value>cfthread タグで起動された、サーバー上のアクティブな ColdFusion スレッドをすべて示します。</value>
+        </data>
+
+        <data name="activeCFThread1">
+<value>このページに示されているアクティブな ColdFusion スレッドの詳細を示します。CFML スタックトレースでは、ColdFusion スレッドの実行状況へのポインタを示します。</value>
+        </data>
+
+        <data name="activeCFThread2">
+<value>実行中と実行待ちの ColdFusion スレッド数のグラフを示します。</value>
+        </data>
+
+        <data name="slowCFThread0">
+<value>cfthread タグで起動された、サーバー上の低速な ColdFusion スレッドを示します。</value>
+        </data>
+
+        <data name="slowCFThread1">
+<value><![CDATA[選択した低速な ColdFusion スレッドの統計情報を示します。プロファイリングがオンになっている場合は、低速なタグおよび関数のトップ 10 と、そのタグまたは関数を<br>呼び出した場所への CFML スタックトレースも示します。]]></value>
+        </data>
+
+        <data name="largeCFThread0">
+<value><![CDATA[メモリ消費量の多い ColdFusion スレッドを示します。<br>このレポートを表示するには、メモリトラッキングを有効にします。]]></value>
+        </data>
+
+        <data name="largeCFThread1">
+<value><![CDATA[選択した ColdFusion スレッドの詳細情報を示します。<br>このレポートを表示するには、メモリトラッキングを有効にします。]]></value>
+        </data>
+
+        <data name="alertNotification">
+<value>電子メール通知</value>
+        </data>
+
+        <data name="alertFromEmailID">
+            <value>送信者の電子メールアドレス</value>
+        </data>
+
+        <data name="alertEmailID">
+<value>受信者の電子メールアドレス</value>
+        </data>
+
+        <data name="alertLoginStr">
+<value>以下の情報を使用してメールサーバーにログインします。</value>
+        </data>
+
+        <data name="alertUsrEmailID">
+<value>ユーザー ID</value>
+        </data>
+
+        <data name="alertPassword">
+<value>パスワード</value>
+        </data>
+
+        <data name="alertDescSetting">
+<value><![CDATA[メモ :メールサーバーとは、ColdFusion Administrator の [サーバーの設定] - [メール] ページで設定されているサーバーのことです。]]></value>
+        </data>
+
+        <data name="strSessionID">
+<value>セッション ID</value>
+        </data>
+
+        <data name="strSessionSize">
+<value>セッションサイズ</value>
+        </data>
+
+        <data name="strCFSessionID">
+<value>CF セッション ID</value>
+        </data>
+
+        <data name="strAppName">
+<value>アプリケーション名</value>
+        </data>
+
+        <data name="defAppName">
+<value>匿名アプリケーション</value>
+        </data>
+
+        <data name="strmaxInActTime">
+<value>最大非アクティブ間隔</value>
+        </data>
+
+        <data name="strLastAccessed">
+<value>前回のアクセス</value>
+        </data>
+
+        <data name="strElapsedTime">
+<value>経過時間</value>
+        </data>
+
+        <data name="strVarName">
+<value>変数名</value>
+        </data>
+
+        <data name="strVarType">
+<value>変数タイプ</value>
+        </data>
+
+        <data name="strLastErrorAt">
+<value>前回のエラー発生時刻 :</value>
+        </data>
+
+        <data name="strErrorCnt">
+<value>エラー数</value>
+        </data>
+
+        <data name="strHitCnt">
+<value>ヒット数</value>
+        </data>
+
+        <data name="strAvgReqSize">
+<value>平均リクエストサイズ</value>
+        </data>
+
+        <data name="strReqSize">
+<value>リクエストサイズ</value>
+        </data>
+
+        <data name="strLastResponseTime">
+<value>前回の応答時間</value>
+        </data>
+
+        <data name="strVarScope">
+<value>変数スコープ</value>
+        </data>
+
+        <data name="strVarSize">
+<value>変数サイズ</value>
+        </data>
+
+        <data name="strDecIn">
+<value>宣言場所</value>
+        </data>
+
+        <data name="strTempPath">
+<value><![CDATA[<b>テンプレートのパス : ]]></value>
+        </data>
+
+        <data name="strServerTime">
+<value><![CDATA[</b><br>サーバー時間 (%) : ]]></value>
+        </data>
+
+        <data name="strOthers">
+<value>その他</value>
+        </data>
+
+        <data name="strLastReqSize">
+<value>前回のリクエストサイズ</value>
+        </data>
+
+        <data name="strMaxReqSize">
+<value>最大リクエストサイズ</value>
+        </data>
+
+        <data name="strMinReqSize">
+<value>最小リクエストサイズ</value>
+        </data>
+
+        <data name="strAvgResTime">
+<value>平均応答時間</value>
+        </data>
+
+        <data name="strMinResTime">
+<value>最小応答時間</value>
+        </data>
+
+        <data name="strMaxResTime">
+<value>最大応答時間</value>
+        </data>
+
+        <data name="strTagFnName">
+<value>タグ / 関数名</value>
+        </data>
+
+        <data name="strAt">
+<value>時刻 </value>
+        </data>
+
+        <data name="strNumTimes">
+<value>回数</value>
+        </data>
+
+        <data name="strAddpath">
+<value>パスを追加</value>
+        </data>
+
+        <data name="strDelPath">
+<value>パスを削除</value>
+        </data>
+
+        <data name="confirmMsg">
+<value>このページの統計情報をリセットしてもよろしいですか。</value>
+        </data>
+
+        <data name="confirmMsg1">
+<value>すべての統計情報をリセットしてもよろしいですか。</value>
+        </data>
+
+        <data name="requestControl">
+<value>リクエスト制御</value>
+        </data>
+
+        <data name="cumulativeRequests">
+<value>累積リクエスト</value>
+        </data>
+
+        <data name="templateRequests">
+<value>テンプレートリクエスト</value>
+        </data>
+
+        <data name="flashRequests">
+<value>Flash Remoting リクエスト</value>
+        </data>
+
+        <data name="webRequests">
+<value>Web サービスリクエスト</value>
+        </data>
+
+        <data name="cfcRequests">
+<value>CFC HTTP リクエスト</value>
+        </data>
+
+        <data name="faultCodeStr">
+<value>失敗コード :</value>
+        </data>
+
+        <data name="remoteOperation">
+<value>リモート操作 :</value>
+        </data>
+
+        <data name="faultStringStr">
+<value>失敗文字列 :</value>
+        </data>
+
+        <data name="detailStr">
+<value>詳細データ</value>
+        </data>
+
+        <data name="endPointURL_notFoundError">
+<value>endPointURL にアクセスできません。</value>
+        </data>
+
+        <data name="retryHelp">
+<value>[再試行] をクリックしてもう一度実行してください。</value>
+        </data>
+
+        <data name="refreshHelp">
+<value>[更新] をクリックして ./index.cfm をもう一度ロードしてください。</value>
+        </data>
+
+        <data name="reqType">
+<value>リクエストタイプ</value>
+        </data>
+
+        <data name="strError">
+<value>エラー</value>
+        </data>
+
+        <data name="strOccuredAt">
+
+<value>発生時刻</value>
+        </data>
+
+        <data name="strLastErrorHistory">
+<value>最近の 10 個のエラー</value>
+        </data>
+
+        <data name="strLastTimeOutHistory">
+<value>最近の 10 個のタイムアウト</value>
+        </data>
+
+        <data name="strTemplatePathLine">
+<value>テンプレートのパス :行番号</value>
+        </data>
+
+        <data name="strAlertMessage">
+<value>アラートメッセージ</value>
+        </data>
+
+        <data name="strAlertActive">
+<value>アクティブなアラート</value>
+        </data>
+
+        <data name="strAlertHistory">
+<value>アラートの履歴</value>
+        </data>
+
+        <data name="noActiveAlerts">
+<value>アクティブなアラートなし</value>
+        </data>
+
+        <data name="jvmmemoryalert">
+<value>JVM メモリのアラート</value>
+        </data>
+
+        <data name="aliasing">
+<value>エイリアス</value>
+        </data>
+
+        <data name="profilingFilter">
+<value>プロファイリングフィルタ</value>
+        </data>
+
+        <data name="aliasName">
+<value>エイリアス名</value>
+        </data>
+
+        <data name="actionParameters">
+<value>アクションパラメータ</value>
+        </data>
+
+        <data name="addParamToolTip">
+<value>追加</value>
+        </data>
+
+        <data name="editParamToolTip">
+<value>編集</value>
+        </data>
+
+        <data name="deleteParamToolTip">
+<value>削除</value>
+        </data>
+
+        <data name="saveParaam">
+<value>保存</value>
+        </data>
+
+        <data name="deleteSelected">
+<value>選択項目を削除</value>
+        </data>
+
+        <data name="deleteAll">
+<value>すべて削除</value>
+        </data>
+
+        <data name="savedList">
+<value>保存されたリスト</value>
+        </data>
+
+        <data name="cancelEdit">
+<value>編集をキャンセル</value>
+        </data>
+
+        <data name="addParamHint">
+<value>(エイリアスを監視する変数のカンマ区切りリスト)</value>
+        </data>
+
+        <data name="aliasing0">
+<value>保存されたすべてのエイリアスのリストを表示して管理します。保存した設定を編集するには、行またはボタンをクリックします。</value>
+        </data>
+
+        <data name="profiling0">
+<value>保存されたすべてのプロファイリング設定のリストを表示して管理します。</value>
+        </data>
+
+        <data name="emptyErrorMsg">
+<value>[テンプレートのパス]、[エイリアス名]、[アクションパラメータ] はいずれも空白にできません。続行するには、[OK] をクリックします。</value>
+        </data>
+
+        <data name="sameInputErrorMsg">
+<value>[テンプレートのパス] と [エイリアス名] は、設定ごとに一意であることが必要です、空白にはできません。続行するには、[OK] をクリックします。</value>
+        </data>
+
+        <data name="excludeProfileMsg">
+<value>以下に指定されているどのパスに対しても、サーバーモニタによるプロファイリングは行われません。</value>
+        </data>
+
+        <data name="includeProfileMsg">
+<value>以下に指定されているすべてのパスに対して、サーバーモニタによるプロファイリングが行われます。</value>
+        </data>
+
+        <data name="aliasMsg">
+<value>エイリアス設定のリスト</value>
+        </data>
+
+        <data name="sRemoteInstanceManager">
+<value>リモートモニタ</value>
+        </data>
+
+        <data name="addServer">
+<value>サーバーを追加</value>
+        </data>
+
+        <data name="detailedView">
+<value>詳細ビュー</value>
+        </data>
+
+        <data name="quickView">
+<value>クイックビュー</value>
+        </data>
+
+        <data name="remoteMonitorErrors">
+<value>接続エラー</value>
+        </data>
+
+        <data name="remoteInstanceMonitor_PageNotes">
+<value>このパネルでは、リモートにインストールされている ColdFusion を監視できます。このコンピュータの接続権限を設定した crossdomain.xml を、監視する各サーバーに配置する必要があります。</value>
+        </data>
+
+        <data name="strScopevar">
+<value>スコープ変数</value>
+        </data>
+
+        <data name="requestMemory">
+<value>要求メモリ</value>
+        </data>
+
+        <data name="strSizeInBytes">
+<value>サイズ (バイト)</value>
+        </data>
+
+        <data name="varValue">
+<value>変数値</value>
+        </data>
+
+        <data name="reqSlowerthan">
+<value>次の時間を超過したリクエスト :</value>
+        </data>
+
+        <data name="reqLargerthan">
+<value>次のサイズを超過したリクエスト :</value>
+        </data>
+
+        <data name="thSlowerthan">
+<value>次の時間を超過したスレッド :</value>
+        </data>
+
+        <data name="thLargerthan">
+<value>次のサイズを超過したスレッド :</value>
+        </data>
+
+        <data name="qrLargerthan">
+<value>次のサイズを超過したクエリー :</value>
+        </data>
+
+        <data name="sessionLargerthan">
+<value>次のサイズを超過したセッション :</value>
+        </data>
+
+        <data name="request">
+<value>リクエスト</value>
+        </data>
+
+        <data name="connectedToolTip">
+<value>このサーバーモニタの提供元であるサーバーに接続されました。</value>
+        </data>
+
+        <data name="disConnectedToolTip">
+<value>このサーバーモニタの提供元であるサーバーに接続できません。</value>
+        </data>
+
+        <data name="connected">
+<value>接続済み</value>
+        </data>
+
+        <data name="disconnected">
+<value>切断済み</value>
+        </data>
+
+        <data name="connected_noLogin">
+<value>接続済みですが、ログインしていません。</value>
+        </data>
+
+        <data name="sendEmail">
+<value>電子メールを送信。</value>
+        </data>
+
+        <data name="dumpSnapshot">
+<value>スナップショットをダンプ。</value>
+        </data>
+
+        <data name="killThreads">
+<value>次の実行時間を超過したスレッドをキル :</value>
+        </data>
+
+        <data name="alertCFC">
+<value>処理を行う CFC</value>
+        </data>
+
+        <data name="cfc_desc1">
+<value>メモ :アラート CFC には、onAlertStart() と onAlertEnd() の 2 つの関数が必要です。これらの関数は引数として構造体を取ります。値は返しません。</value>
+        </data>
+
+        <data name="cfc_desc2">
+<value>onAlertStart()</value>
+        </data>
+
+        <data name="cfc_desc3">
+<value>この関数は、アラートがアクティブになると実行されます。</value>
+        </data>
+
+        <data name="cfc_desc4">
+<value>この関数に渡される構造体には、アラートがアクティブになったときの設定情報が格納されています。</value>
+        </data>
+
+        <data name="cfc_desc5">
+<value>onAlertEnd()</value>
+        </data>
+
+        <data name="cfc_desc6">
+<value>この関数は、サーバーでこのアラートが解決されたとき、またはこのアラートが無効化されたときに実行されます。</value>
+        </data>
+
+        <data name="cfc_desc7">
+<value>この関数に渡される構造体には、アラートが解決または無効化されたときのアラートの設定が格納されています。</value>
+        </data>
+
+        <data name="cfc_desc8">
+<value>また、このアラート状態を解決するためにサーバーモニタで実行されたアクションに関する情報も格納されています。</value>
+        </data>
+
+        <data name="cfc_desc9">
+<value>たとえば、キルされたスレッドやダンプされたスナップショット名などが含まれています。</value>
+        </data>
+
+        <data name="secs">
+<value>(秒)</value>
+        </data>
+
+        <data name="actions">
+<value>アクション</value>
+        </data>
+
+        <data name="rejectReq">
+<value>新しいリクエストをすべて拒否。</value>
+        </data>
+
+        <data name="enabledStr">
+<value>有効化</value>
+        </data>
+
+        <data name="hungServerDesc_1">
+<value><![CDATA[[ハングしているスレッド数] に指定した数のスレッドが、[ビジースレッド時間] よりも長く実行された場合、]]></value>
+        </data>
+
+        <data name="hungServerDesc_2">
+<value>サーバーは無応答とみなされます。</value>
+        </data>
+
+        <data name="hungServer_HTC">
+<value>ハングしているスレッド数</value>
+        </data>
+
+        <data name="hungServer_BTT">
+<value>ビジースレッド時間</value>
+        </data>
+
+        <data name="slowServerDesc_1">
+<value><![CDATA[サーバーの平均応答時間が次に指定したしきい値を超過すると、低速サーバーのアラートが作成されます。]]></value>
+        </data>
+
+        <data name="responseTime">
+<value>応答時間のしきい値</value>
+        </data>
+
+        <data name="jvmDesc_1">
+<value><![CDATA[サーバーで使用されている JVM メモリが次のしきい値を超過すると、JVM メモリのアラートが作成されます。]]></value>
+        </data>
+
+        <data name="memThreshold">
+<value>JVM メモリのしきい値</value>
+        </data>
+
+        <data name="performGC">
+<value>ガベージコレクションを実行。</value>
+        </data>
+
+        <data name="timeoutsDesc_1">
+<value><![CDATA[[時間間隔] に指定した時間内に、[タイムアウト数] に指定した数のリクエストがタイムアウトすると、タイムアウトアラートが作成されます。]]></value>
+        </data>
+
+        <data name="timeoutsCount">
+<value>タイムアウト数</value>
+        </data>
+
+        <data name="timeInterval">
+<value>時間間隔</value>
+        </data>
+
+        <data name="emailSettings">
+<value>電子メールの設定</value>
+        </data>
+
+        <data name="qrSlowerthan">
+<value>次の時間を超過したクエリー :</value>
+        </data>
+
+        <data name="entireRun">
+<value>すべてのデータ</value>
+        </data>
+
+        <data name="last24Hours">
+<value>過去 24 時間</value>
+        </data>
+
+        <data name="last12Hours">
+<value>過去 12 時間</value>
+        </data>
+
+        <data name="last4Hours">
+<value>過去 4 時間</value>
+        </data>
+
+        <data name="lastHour">
+<value>過去 1 時間</value>
+        </data>
+
+        <data name="last30Mins">
+<value>過去 30 分</value>
+        </data>
+
+        <data name="last15Mins">
+<value>過去 15 分</value>
+        </data>
+
+        <data name="last5Mins">
+<value>過去 5 分</value>
+        </data>
+
+        <data name="lastMin">
+<value>過去 1 分</value>
+        </data>
+
+        <data name="strQueries">
+<value>クエリー</value>
+        </data>
+
+        <data name="invalidated">
+<value>無効化</value>
+        </data>
+
+        <data name="active">
+<value>アクティブ</value>
+        </data>
+
+        <data name="recovered">
+<value>解決</value>
+        </data>
+
+        <data name="strAlertStatus">
+<value>アラートステータス</value>
+        </data>
+
+        <data name="strJvmMem">
+<value>JVM メモリ</value>
+        </data>
+
+        <data name="strUnresServ">
+<value>無応答サーバー</value>
+        </data>
+
+        <data name="strSlowServ">
+<value>低速サーバー</value>
+        </data>
+
+        <data name="strTimeOut">
+<value>タイムアウト</value>
+        </data>
+		
+		<data name="avgSlowRequest0">
+			<value><![CDATA[サーバーに対する、平均応答時間が低速なリクエストを示します。<br>CFC に対するリクエストの場合は、リクエストされた CFC 関数の名前も示します。]]></value>
+        </data>
+		
+		<data name="avgSlowRequest1">
+			<value><![CDATA[選択した低速なリクエストの統計情報を示します。プロファイリングがオンになっている場合は、低速なタグおよび関数のトップ 10 と、そのタグまたは関数を<br>呼び出した場所への CFML スタックトレースも示します。]]></value>
+        </data>
+		
+		<data name="strExecutedAt">
+<value>実行時刻</value>
+        </data>
+		
+		<data name="strResponseTime">
+<value>応答時間</value>
+        </data>
+		
+		<data name="TOPAVGSLOWREQUESTCNT">
+<value>平均で低速なリクエスト</value>
+        </data>
+		
+		<data name="reqScopeVar">
+<value>リクエストスコープ変数</value>
+        </data>
+
+		<data name="logoutStr">
+			<value>ログアウト</value>
+		</data>
+
+		<data name="MonitorOverview">
+	 		<value>概要</value>
+		</data>
+		<data name="MonitorStatistics">
+			<value>統計情報</value>
+		</data>
+		<data name="MonitorAlerts">
+			<value>アラート</value>
+		</data>
+		<data name="MonitorSnapshots">
+			<value>スナップショット</value>
+		</data>
+		<data name="CancelStr">
+			<value>キャンセル</value>
+		</data>
+		<data name="StartMonitoring">
+			<value>監視を開始</value>
+		</data>
+		<data name="StopMonitoring">
+			<value>監視を停止</value>
+		</data>
+		<data name="StartProfiling">
+			<value>プロファイリングを開始</value>
+		</data>
+		<data name="StopProfiling">
+			<value>プロファイリングを停止</value>
+		</data>
+		<data name="StartMemTracking">
+			<value>メモリトラッキングを開始</value>
+		</data>
+		<data name="StopMemTracking">
+			<value>メモリトラッキングを停止</value>
+		</data>
+		<data name="sDelStr">
+			<value>削除</value>
+		</data>
+		<data name="sDelAllStr">
+			<value>すべて削除</value>
+		</data>
+		<data name="calAvgResponseTime">
+			<value>平均応答時間の計算間隔</value>
+		</data>
+		<data name="CallGC">
+			<value>GC を呼び出す</value>
+		</data>
+		<data name="shrinkTemplatePath">
+			<value>テンプレートのパスを簡略表示</value>
+		</data>
+		<data name="sMaximize">
+			<value>最大化</value>
+		</data>
+		<data name="sMinimize">
+			<value>最小化</value>
+		</data>
+		<data name="sHelpStr">
+			<value>ヘルプ</value>
+		</data>
+		<data name="sAlerts1">
+			<value>アラート</value>
+		</data>
+		<data name="okStr">
+			<value>OK</value>
+		</data>
+		<data name="sEventStr">
+			<value>イベント</value>
+		</data>
+		<data name="confirmDelAllSnapshot">
+			<value>すべてのスナップショットを削除してもよろしいですか。</value>
+		</data>
+		<data name="reportJVMMemory">
+			<value>JVM メモリ (使用 / 最大) MB</value>
+		</data>
+		<data name="loginErrMsg">
+			<value>ログインに失敗しました。もう一度ログインしてください。</value>
+		</data>
+		<data name="tryingToLogin">
+			<value>ログイン中です...</value>
+		</data>
+		<data name="loginInfoStr">
+			<value>ログイン情報</value>
+		</data>
+		<data name="loginUserStr">
+			<value>ユーザー名 :</value>
+		</data>
+		<data name="loginPwdStr">
+			<value>パスワード :</value>
+		</data>
+		<data name="errInfoStr">
+			<value>エラー情報</value>
+		</data>
+		<data name="connectInfoStr">
+			<value>接続情報</value>
+		</data>
+		<data name="serverStr">
+			<value>サーバー :</value>
+		</data>
+		<data name="portStr">
+			<value>ポート :</value>
+		</data>
+		<data name="ctxtRootStr">
+			<value>コンテキストルート :</value>
+		</data>
+		<data name="pathtoCFIDE">
+			<value>サーバーの CFIDE ディレクトリへのパス :</value>
+		</data>
+		<data name="refreshUIStr">
+			<value>サーバーモニタは停止しています。サーバーモニタは今すぐ自動更新されます。</value>
+		</data>
+		<data name="saveLoginInfo">
+			<value>ログイン情報の保存</value>
+		</data>
+		<data name="tryingToConnect">
+			<value>接続およびログイン中です...</value>
+		</data>
+		<data name="loginBoxTitle">
+			<value>サーバーモニタログイン</value>
+		</data>
+		<data name="sLoginStr">
+			<value>ログイン</value>
+		</data>
+		<data name="logoutErrMsg">
+			<value>ColdFusion サーバーからログアウトしました。</value>
+		</data>
+		<data name="serverError">
+			<value>ColdFusion サーバーは使用できません。</value>
+		</data>
+		<data name="runGC">
+			<value>GC の実行</value>
+		</data>
+		<data name="newTemplatePath">
+			<value>ここにテンプレートパスを入力してください</value>
+		</data>
+		<data name="newAliasName">
+			<value>ここにエイリアス名を入力してください</value>
+		</data>
+		<data name="newParamValue">
+			<value>ここにパラメータを入力してください (カンマ区切り)</value>
+		</data>
+		<data name="cachingStats">
+			<value>キャッシュ</value>
+		</data>
+		<data name="serverCacheRegion">
+			<value>サーバーのキャッシュ領域</value>
+		</data>
+		<data name="serverCacheRegion">
+			<value>サーバーのキャッシュ領域</value>
+		</data>
+		<data name="applicationCacheRegion">
+			<value>アプリケーションのキャッシュ領域</value>
+		</data>
+		<data name="liststatsofcacheRegions">
+			<value>キャッシュ領域の統計情報を一覧表示</value>
+		</data>
+		<data name="cacheregion">
+			<value>キャッシュ領域</value>
+		</data>
+		<data name="hitcount">
+			<value>ヒット数</value>
+		</data>
+		<data name="misscount">
+			<value>ミス数</value>
+		</data>
+		<data name="noofobjecs">
+			<value>オブジェクトの数</value>
+		</data>
+		<data name="cachehitcount">
+			<value>キャッシュヒット数</value>
+		</data>
+		<data name="cachemisscount">
+			<value>キャッシュミス数</value>
+		</data>
+		<data name="cachehitratio">
+			<value>キャッシュヒット率</value>
+		</data>
+		<data name="cachesize">
+			<value>キャッシュサイズ</value>
+		</data>
+		<data name="evictioncount">
+			<value>追い出し数</value>
+		</data>
+		<data name="avggettime">
+			<value>平均取得時間</value>
+		</data>
+		<data name="bytestr">
+			<value>バイト</value>
+		</data>
+		<data name="viewingStatsApp">
+			<value>次に示すものの統計情報を表示しています </value>
+		</data>
+		<data name="listofapps">
+			<value>アプリケーションのリスト</value>
+		</data>
+		<data name="selectanapp">
+			<value>アプリケーションを選択</value>
+		</data>
+		<data name="appname">
+			<value>アプリケーション名</value>
+		</data>
+		<data name="URI">
+			<value>URI</value>
+		</data>
+		<data name="Methodtype">
+			<value>メソッドタイプ</value>
+		</data>
+		<data name="memoryQueries1">
+			<value><![CDATA[選択したデータベースクエリの統計情報を示します。このレポートでは平均の情報を示しているので、クエリーの SQL は表示できません。SQL はクエリー呼び出しごとに異なる場合があります。]]></value>
+		</data>
+		<data name="largeSession0">
+			<value><![CDATA[メモリ消費量の多いアクティブセッションを示します。<br>このレポートを表示するには、メモリトラッキングを有効にします。]]></value>
+		</data>
+	</root>
+

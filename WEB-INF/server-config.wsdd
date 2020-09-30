@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment name="defaultClientConfig"
+            xmlns="http://xml.apache.org/axis/wsdd/"
+            xmlns:java="http://xml.apache.org/axis/wsdd/providers/java"
+            xmlns:handler="http://xml.apache.org/axis/wsdd/providers/handler">
+
+ <globalConfiguration>
+   <requestFlow>
+     <!-- This is the ColdFusion CFC handler -->
+     <handler type="java:coldfusion.xml.rpc.CFCHandler"/>
+     <handler type="java:org.apache.axis.handlers.JWSHandler"/>
+   </requestFlow>
+
+   <!-- Change for CFMX 7.  Turn off multirefs --> 
+   <parameter name="sendMultiRefs" value="false"/>
+   <!-- Turn on the .NET is broken switch -->
+   <parameter name="dotNetSoapEncFix" value="true"/>
+ </globalConfiguration>
+
+ <handler type="java:org.apache.axis.providers.java.RPCProvider" name="RPCDispatcher"/>
+ <handler type="java:org.apache.axis.handlers.http.URLMapper" name="URLMapper"/>
+ <handler type="java:org.apache.axis.providers.java.MsgProvider" name="MsgDispatcher"/>
+ <handler type="java:org.apache.axis.transport.local.LocalResponder" name="LocalResponder"/>
+ <handler type="java:org.apache.axis.handlers.SimpleAuthenticationHandler" name="Authenticate"/>
+
+ <!-- The type mapping for the CF query object, RPC encoded -->
+ <typeMapping
+        xmlns:query="http://rpc.xml.coldfusion"
+        qname="query:QueryBean"
+        type="java:coldfusion.xml.rpc.QueryBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+      />
+
+ <!-- The type mapping for the CF query object in document style (no encoding) -->
+ <typeMapping
+        xmlns:cf="http://rpc.xml.coldfusion"
+        qname="cf:DocumentQueryBean"
+        type="java:coldfusion.xml.rpc.DocumentQueryBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+
+ <!-- The type mapping for the invocation error for document style -->
+ <typeMapping
+        xmlns:cf="http://rpc.xml.coldfusion"
+        qname="cf:CFCInvocationException"
+        type="java:coldfusion.xml.rpc.CFCInvocationException"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      
+ <!-- The document/literal Query type needs array mappings -->
+ <arrayMapping
+        xmlns:cf="http://rpc.xml.coldfusion"
+        qname="cf:ArrayOfArrayOf_xsd_anyType"
+        type="java:java.lang.Object[][]"
+        innerType="cf:ArrayOf_xsd_anyType"
+        encodingStyle=""
+      />
+ <arrayMapping
+        xmlns:cf="http://rpc.xml.coldfusion"
+        qname="cf:ArrayOf_xsd_anyType"
+        type="java:java.lang.Object[]"
+        innerType="xsd:anyType" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        encodingStyle=""
+      />
+ <arrayMapping
+        xmlns:cf="http://rpc.xml.coldfusion"
+        qname="cf:ArrayOf_xsd_string"
+        type="java:java.lang.String[]"
+        innerType="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        encodingStyle=""
+      />
+               
+
+ <transport name="http">
+  <requestFlow>
+   <handler type="URLMapper"/>
+   <handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
+  </requestFlow>
+ </transport>
+
+</deployment>
+
